@@ -21,9 +21,15 @@
 * [Pythonのインストール](pc-python.md)
 * [Jupyter Labの使い方](pc-jupyterlab.md)
 
-## 仮想マシン
+## 仮想マシン（本格版）
 
 :bulb: `Python`（含 `Jupyter Notebook` / `JupyterLab`）, `Ruby`, `R`, `LaTeX`などはWindows版の安定したアプリがありますので、特に支障がない限りそれらを使うことをおすすめします。
+
+### 簡易版
+
+* [Windows Subsystem for Linux 1 (WSL-1)のインストール](pc-wsl-1.md)
+
+### 本格版
 
 * [VirtualBoxとVagrantのインストール](pc-virtualbox-vagrant.md)
 * [Ubuntu 18.04 LTSを使った仮想マシンの作成](vm-ubuntu1804.md)
