@@ -9,6 +9,7 @@
 
 - [Pythonをインストールする](pc-python.md)
 - [JupyterLabをインストールする](pc-python.md)
+- [Node.jsをインストールする](https://nodejs.org/ja/)
 
 ## 起動
 
