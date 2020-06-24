@@ -21,7 +21,7 @@
 * [Pythonのインストール](pc-python.md)
 * [Jupyter Labの使い方](pc-jupyterlab.md)
 
-## 仮想マシン（本格版）
+## 仮想マシン
 
 :bulb: `Python`（含 `Jupyter Notebook` / `JupyterLab`）, `Ruby`, `R`, `LaTeX`などはWindows版の安定したアプリがありますので、特に支障がない限りそれらを使うことをおすすめします。
 
