@@ -8,8 +8,8 @@
 
 ## インストール
 
-- [Download Python](https://www.python.org/downloads/)にいく
-- `Download Python 3.x.x`を選択しインストーラーをダウンロード → 起動
+- [Python Releases for Windows](https://www.python.org/downloads/windows/)にいく
+- `Download Windows x86-64 executable installer`を選択しインストーラーをダウンロード → 起動
 - インストーラーの初期画面で以下にチェックを入れる
   - [x] Install launcher for all users (recommended)
   - [x] Add Python 3.x to PATH
@@ -18,7 +18,7 @@
 - `Windows PowerShell`を起動し、以下のコマンドを実行
 ```
 PS C:\Users\アカウント名> python -V
-Python 3.8.2
+Python 3.8.3
 PS　C:\Users\アカウント名>
 ```
 - ↑のようにPythonのバージョンが表示されたら成功（バージョン番号はインストールする時期により異なります）
