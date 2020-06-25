@@ -13,7 +13,8 @@
 - インストーラーの初期画面で以下にチェックを入れる
   - [x] Install launcher for all users (recommended)
   - [x] Add Python 3.x to PATH
-- Install Nowを選択
+- `Customize installation`を選択 → `Next`
+- `Advanced Options`の`Customize install location`の`C:\Users\ユーザ名\AppData\Local\Programs\Python\Python38`を`C:\Home\sNNNNNN\AppData\Local\Programs\Python\Python38`に変更 → `Install`
 - `Setup was successful`が表示されたら、`Close`
 - `Windows PowerShell`を起動し、以下のコマンドを実行
 ```
@@ -30,9 +31,15 @@ PS　C:\Users\アカウント名>
 ```
 PS C:\Users\アカウント名> py -m pip install 【パッケージ名】
 ```
+
 - Jupyter Labをインストールする場合
 ```
 PS C:\Users\アカウント名> py -m pip install jupyterlab
+```
+
+- pipを最新版にする場合
+```
+PS C:\Users\アカウント名> py -m pip install --upgrade pip
 ```
 
 ## 代表的なパッケージ
