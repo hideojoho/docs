@@ -32,6 +32,10 @@
 
 - Japanese Language Pack for Visual Studio Code
 
+### コード自動整形
+
+- Prettier (by Prettier)
+
 ### 印刷
 
 - PrintCode (by nobuhito)
