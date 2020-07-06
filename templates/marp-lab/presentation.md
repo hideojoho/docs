@@ -19,6 +19,9 @@ style: |
   ul, ol {
     margin: 0;
   }
+  li {
+    margin-bottom: .5em;
+  }
   footer {
       color: #333;
   }
