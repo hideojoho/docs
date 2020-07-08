@@ -28,7 +28,7 @@
 
 ```
 PS C:\Users\ユーザ名> psql --version
-psql (PostgreSQL) 12.3
+psql (PostgreSQL) 11.2
 ```
 
 ## サービスの停止と起動
@@ -37,18 +37,18 @@ psql (PostgreSQL) 12.3
   - 管理者権限で`Windows PowerShell`を起動し、以下のコマンドを実行
 
 ```
-PS C:\Users\ユーザ名> net stop postgresql-x64-12
-postgresql-x64-12 サービスを停止中です.
-postgresql-x64-12 サービスは正常に停止されました。
+PS C:\Users\ユーザ名> net stop postgresql-x64-11
+postgresql-x64-11 サービスを停止中です.
+postgresql-x64-11 サービスは正常に停止されました。
 ```
 
 - サービスの起動
   - 管理者権限で`Windows PowerShell`を起動し、以下のコマンドを実行
 
 ```
-PS C:\Users\ユーザ名> net start postgresql-x64-12
-postgresql-x64-12 サービスを開始します.
-postgresql-x64-12 サービスは正常に開始されました。
+PS C:\Users\ユーザ名> net start postgresql-x64-11
+postgresql-x64-11 サービスを開始します.
+postgresql-x64-11 サービスは正常に開始されました。
 ```
 
 ### サービス自動起動の停止（任意）
@@ -56,6 +56,6 @@ postgresql-x64-12 サービスは正常に開始されました。
 - 普段は`PostgreSQL`を使用しないので、ログイン時のサービス自動起動を無効にしたい場合は、管理者権限で`Windows PowerShell`を起動し、以下のコマンドを実行
 
 ```
-PS C:\Users\ユーザ名> sc config postgresql-x64-12 start=demand
+PS C:\Users\ユーザ名> sc config postgresql-x64-11 start=demand
 [SC] ChangeServiceConfig SUCCESS
 ```
