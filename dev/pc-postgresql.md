@@ -10,7 +10,6 @@
   - 他のバージョンだと研究室PCではインストール時にエラーが出る場合があります
   - 参考：[PostgreSQL Database Download](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)にいく
 - ダウンロードされたインストーラーを右クリック → 管理者として実行を選択
-- Microsoft Visual C++のインストールが自動的に開始
 - インストーラーの手順に従って進める
   - `superuser`のログイン情報に適当な値を入力する
   - `Next`を続ける
