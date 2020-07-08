@@ -6,8 +6,9 @@
 
 ## インストール
 
-- [PostgreSQL Database Download](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)にいく
-- `Windows x86-64`列の一番上にあるバージョン（今回の例では、`12.3`）の`Download`を選択しインストーラーをダウンロード → 起動
+- [PostgreSQL ver 11.2](https://get.enterprisedb.com/postgresql/postgresql-11.2-1-windows-x64.exe)をダウンロード → 起動
+  - 他のバージョンだとインストール時にエラーが出る場合があります
+  - 参考：[PostgreSQL Database Download](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)にいく
 - Microsoft Visual C++のインストールが自動的に開始
 - インストーラーの手順に従って進める
   - `superuser`のログイン情報に適当な値を入力する
