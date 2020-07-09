@@ -52,3 +52,12 @@
 ウェブ上のデータを収集するウェブクローラー（ボット）の利用には細心の注意が必要です。
 
 - [ウェブクローラーとユーザエージェント](web-crawler.md)
+
+## WebアプリとHerokuへのデプロイ
+
+PythonのFlaskフレームワークを用いたウェブアプリの開発。データベースにはPostgreSQLを使って、最後はHerokuにデプロイします。
+
+- [Pythonのインストール](pc-python.md)
+- [PostgreSQLのインストール](pc-postgresql.md)
+- [Flaskを使ったウェブアプリ開発](webapp-flask.md)
+- [Herokuへのデプロイ](pc-heroku.md)
