@@ -32,7 +32,7 @@ postgres=# create database myapp_db;
 postgres=# \q
 ```
 
-- `db.sql` を用いて表 `myapp_db` を作成
+- [db.sql](./flask/db.sql) を用いて表 `myapp_db` を作成
 
 ```
 > psql -h localhost -p 5432 -U postgres -d myapp_db
@@ -73,7 +73,7 @@ myapp_db=# \q
 
 ### Pythonパッケージのインストール
 
-- ファイル `requirements.txt` の新規作成
+- ファイル [requirements.txt](./flask/requirements.txt) の新規作成
 
 ```
 flask
@@ -88,6 +88,8 @@ psycopg2
 ```
 
 ### アプリの作成
+
+- [myapp.py](./flask/myapp.py)
 
 ```Python
 import os
