@@ -8,6 +8,7 @@ PythonのFlaskフレームワークを用いたウェブアプリの開発。デ
 
 ## 前提
 
+- [Gitのインストール](pc-git.md)
 - [Pythonのインストール](pc-python.md)
 - [PostgreSQLのインストール](pc-postgresql.md)
 
