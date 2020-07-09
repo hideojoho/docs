@@ -180,4 +180,4 @@ if __name__ == '__main__':
 
 ### 次：Herokuへのデプロイ
 
-- [Herokuへのデプロイ](heroku-pc.md)
+- [Herokuへのデプロイ](pc-heroku.md)
