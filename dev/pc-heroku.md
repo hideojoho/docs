@@ -1,6 +1,6 @@
 # Herokuを使ったウェブアプリのデプロイ
 
-[Heroku](https://jp.heroku.com/)はウェブアプリをホストしてくれるサービスです。
+[Heroku](https://jp.heroku.com/)はウェブアプリをホストしてくれるサービスです。ファイルは[ここにあります](./flask/)。
 
 ## 所要時間
 
