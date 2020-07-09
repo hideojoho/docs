@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div>
+    <table border=1>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Citation Number</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in data %}
+        <tr>
+            <th>{{item.id}}</th>
+            <td>{{item.title}}</td>
+            <td>{{item.author}}</td>
+            <td>{{item.citation_number}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+    <hr/>
+    <h2>Add a record</h2>
+    <form action="/add" method="POST">
+        <input type="text" name="title" placeholder="Title"/>
+        <input type="text" name="author" placeholder="Author"/>
+        <input type="text" name="citation_number" placeholder="Number of Citation"/>
+        <input type="submit"/>
+    </form> 
+</div>
+{% endblock %}
