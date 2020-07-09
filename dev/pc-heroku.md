@@ -28,20 +28,20 @@ Logged in as YOUR_EMAIL_ADDRESS
 
 ### デプロイに必要なファイルの作成
 
-- `Procfile`
+- [Procfile](./flask/Procfile)
 
 ```
 web: gunicorn myapp:app --log-file -
 ```
 
-- `runtime.txt`
+- [runtime.txt](./flask/runtime.txt)
 
 ```
 python-3.8.3
 
 ```
 
-- `requirements.txt`の末尾に以下の行を追加
+- [requirements.txt](./flask/requirements.txt) の末尾に以下の行を追加
 
 ```
 gunicorn
@@ -78,7 +78,7 @@ https://calm-escarpment-90498.herokuapp.com/ | https://git.heroku.com/calm-escar
 > heroku addons:create heroku-postgresql:hobby-dev
 ```
 
-- `db.sql`を使ってHeroku上のDBで表作成
+- [db.sql](./flask/db.sql) を使ってHeroku上のDBで表作成
 
 ```
 > heroku pg:psql
