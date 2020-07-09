@@ -78,7 +78,7 @@ https://calm-escarpment-90498.herokuapp.com/ | https://git.heroku.com/calm-escar
 > heroku addons:create heroku-postgresql:hobby-dev
 ```
 
-- `db.sql`を使ってHeroku上のDBの表作成
+- `db.sql`を使ってHeroku上のDBで表作成
 
 ```
 > heroku pg:psql
@@ -112,7 +112,7 @@ calm-escarpment-90498::DATABASE=> \q
 > heroku open
 ```
 
-- 開いたページでレコードの追加ができる確認
+- 開いたページでレコードの追加ができるか確認
 
 ### Herokuアプリの削除
 
