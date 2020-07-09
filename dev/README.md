@@ -53,7 +53,7 @@
 
 - [ウェブクローラーとユーザエージェント](web-crawler.md)
 
-## WebアプリとHerokuへのデプロイ
+## ウェブアプリ開発とHerokuへのデプロイ
 
 PythonのFlaskフレームワークを用いたウェブアプリの開発。データベースにはPostgreSQLを使って、最後はHerokuにデプロイします。
 
