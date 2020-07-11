@@ -49,7 +49,7 @@ Client Version: version.Info{Major:"1", Minor:"16+", GitVersion:"v1.16.6-beta.0"
   - 「環境変数」を選択
   - 「ユーザ環境変数」→新規作成を選択
     - 変数名：`KUBECONFIG`
-    - 変数値：コンフィグファイルの保存場所（C:\Users\アカウント名\SynologyDrive\MyFolders\Local\k8s\admin.conf`）
+    - 変数値：コンフィグファイルの保存場所（例：`C:\Users\アカウント名\SynologyDrive\MyFolders\Local\k8s\admin.conf`）
     - OK
   - OK→OK
 - `PowerShell`を起動し、以下のコマンドを実行
