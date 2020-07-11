@@ -47,9 +47,16 @@
     - Notebookアイコンメニューの右端の`Jupyter Server`が接続されたアイコンになりURLの一部が表示されていたら、接続が成功しています
 - これ以降、Jupyterサーバとの接続が切れるまでは、VSCode上のプログラムは研究室クラスターのJupyterサーバ上で処理されて、その結果がVSCode上に表示されます
   - プログラムは手元の研究室PCにありますが、入出力データは研究室クラスター内にしか存在していないので、注意してください
-  
+- `Error: Cannot execute code, session has been disposed.`等のメッセージが表示されたら、Jupyerサーバとの接続が切断されていますので、新しいトークンを取得するところから再開しましょう。
  
  ## Jupyter Notebook コードスニペット集
  
+ - Linxuコマンドの実行
+   - Linuxコマンドは冒頭に`!`をつけて、空白文字を置かずに、コマンドを記述することで実行できます
  
+```
+[ ]: !ls /
+bin   dev  home  lib64	mnt  proc  run	 srv  tmp  var
+boot  etc  lib	 media	opt  root  sbin  sys  usr
+```
   
