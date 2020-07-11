@@ -3,8 +3,8 @@
 ## 前提
 
 - GitHubアカウント + 研究室組織アカウントへの追加
-- Python
-- VSCodo + Pythonプラグイン
+- [Python](../pc-python.md)
+- [VSCodo](../pc-vscode.md) + Pythonプラグイン
 
 ## 基本事項
 
@@ -28,8 +28,9 @@
 - 画面右上の「Control Panel」を選択
 - 画面上部メニューから「Token」を選択
 - `Request My New Token`を選択し、表示されたトークンをコピペする
-  - :warning: 本トークンは一度しか表示されない
-  - 必要になったら新しいトークンを発行する
+  - :warning: 本トークンは一度しか表示されないので注意
+  - 必要になったら新しいトークンを発行して大丈夫です
+- トークンをコピペしたら、上部メニューから`Home` → `My Server`を選択し、Jupyter Labを起動しておく
 - VSCodeを起動する
   - Jupyter Notebookを保存するフォルダを作成しておく
   - 「ファイル」→「フォルダを開く」で作成したフォルダを選択
@@ -37,7 +38,7 @@
   - Notebookの画面が表示されたら、最初のセルに以下のコマンドを入力し、Notebookを名前を付けて保存する（セルの実行はしない）
     - `print('Hello')`
   - `Ctrl+Shift+P` → `remote`と入力し、`Python: Specify local or remote Jupyter servers for connection`を選択
-  - `Existing`を選択し、表示された入力欄の以下のURLを入力
+  - `Existing`を選択し、表示された入力欄に以下のURLを入力
     - `http://isr2.slis.tsukuba.ac.jp/user/[github username]/?token=[token]`
     - `[github username]`: 自分のGitHubアカウント名
     - `[token]`: ↑で入手したtoken
