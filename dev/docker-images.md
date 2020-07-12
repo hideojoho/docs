@@ -1,6 +1,6 @@
 # Dockerイメージの作成
 
-研究室クラスターで再利用可能なDockerイメージを作成し、Docker Hubに登録する方法
+再利用可能なDockerイメージを作成し、Docker Hubに登録する方法
 
 ## 所要時間
 
@@ -11,6 +11,7 @@
 - WSL2
 - Docker for Windows
 - VSCode + Remote WSLプラグイン
+- Docker Hubアカウント（個人のDockerイメージを公開する場合のみ）
 
 ## 手順
 
@@ -53,28 +54,67 @@ Linux DESKTOP-34R6FTL 4.19.104-microsoft-standard #1 SMP Wed Feb 19 06:37:35 UTC
 - 今回の以下の構成のDockerイメージを作成します。
   - ベースOS: [Ubuntu 20.04](https://hub.docker.com/_/ubuntu?tab=tags&name=20.04)
   - Python
-- - `MyImage`にファイル`Dockerfile`を新規作成
+- `MyImage`にファイル`Dockerfile`を新規作成
 
 ```
+# ベースイメージ
 FROM ubuntu:20.04
+# イメージ作成者情報
 MAINTAINER Your Name <yourname@example.com>
+# パッケージの更新
 RUN apt update && apt -y upgrade
-RUN apt install -y python python-pip
+# 開発系パッケージの一括インストール（任意）
+RUN apt install -y build-essential
+# Pythonとpipのインストール
+RUN apt install -y python3 python3-pip
+# 不要パッケージとキャッシュの削除
+RUN apt autoremove -y && apt clean
 ```
 
 ### Dockerイメージの構築
 
 - VSCodeのターミナル（WSL）で以下のコマンドを実行
-  - `myimage`: ユーザ名
-  - `ubuntu_python`: イメージ名
-  - `20200712`: イメージのバージョンタグ
-  - `.`: イメージの保存場所
+  - `myimage`: ユーザ名（任意、Docker Hub個人アカウント名、あるいは`joholab`）
+  - `ubuntu_py3`: イメージ名
+  - `20200712`: イメージのバージョンタグ（今回は日付を使用）
+  - `.`: `Dockerfile`の場所
 
 ```
-$ docker build -t myimage/ubuntu_python:20200712 .
+$ docker build -t myimage/ubuntu-py3:20200712 .
+...
+...
+Successfully built 60f1a341a261
+Successfully tagged myimage/ubuntu-py3:20200712
 ```
 
+### 作成されたDockerイメージの確認
 
+```
+$ docker images
+REPOSITORY                   TAG                 IMAGE ID            CREATED             SIZE
+myimage/ubuntu-py3           20200712            60f1a341a261        33 seconds ago      391MB
+```
+
+### Dockerイメージの削除（ホストPC）
+
+```
+$ docker rmi [IMAGE ID]
+```
+
+### DockerイメージのDocker Hubへの送信
+
+- 個人的なDockerイメージをDocker Hubに公開する場合は、Docker Hubアカウントを作成します
+- Dockerイメージ構築コマンドで、ユーザ名の部分で、アカウント名を指定する
+
+```
+$ docker push ユーザ名/イメージ名
+```
+
+### 研究室用Dockerイメージを作成する際の注意点
+
+- ユーザ名：`joholab`
+- イメージ名：他のイメージと競合しないように、指導教員に相談してください
+- Docker Hubへの送信：指導教員に相談してください
 
 ## URLs
 
