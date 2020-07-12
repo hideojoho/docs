@@ -153,6 +153,8 @@ $ docker rmi [IMAGE ID]
 $ docker push ユーザ名/イメージ名
 ```
 
+- `hideojoho/ubuntu-py3`で作成したイメージを[Docker Hubに公開した例](https://hub.docker.com/repository/docker/hideojoho/ubuntu-py3)
+
 ### 研究室用Dockerイメージを作成する際の注意点
 
 - ユーザ名：`joholab`
