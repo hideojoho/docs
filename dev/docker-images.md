@@ -55,12 +55,15 @@ Linux DESKTOP-34R6FTL 4.19.104-microsoft-standard #1 SMP Wed Feb 19 06:37:35 UTC
   - ベースOS: [Ubuntu 20.04](https://hub.docker.com/_/ubuntu?tab=tags&name=20.04)
   - Python
 - `MyImage`にファイル`Dockerfile`を新規作成
+  - :bulb: `MAINTAINER <name>`記法は[廃止予定](http://docs.docker.jp/engine/reference/builder.html#maintainer)だそうです
 
 ```
 # ベースイメージ
 FROM ubuntu:20.04
-# イメージ作成者情報
-MAINTAINER Your Name <yourname@example.com>
+# イメージ情報
+LABEL Maintainer="you@example.com"
+LABEL Version="1.0"
+LABEL Description="This a sample Dockerfile to learn how to make a Docker image."
 # パッケージの更新
 RUN apt update && apt -y upgrade
 # 開発系パッケージの一括インストール（任意）
