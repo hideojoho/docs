@@ -32,7 +32,7 @@
 |:--|:--|:--|:--|
 |[alpine](https://hub.docker.com/_/alpine)|小型ベースイメージ|`apk`|[latest (linux/amd64)](https://hub.docker.com/_/alpine?tab=tags&name=latest) (2.66MB)|
 |[ubuntu](https://hub.docker.com/_/ubuntu)|Debianベースの代表的OS|`apt`|[20.04 (linux/amd64)](https://hub.docker.com/_/ubuntu?tab=tags&name=20.04) (27.27MB)|
-|[CentOS](https://hub.docker.com/_/centos)|RedHatベースの代表的OS|`yum`|[latest (linux/amd64)](https://hub.docker.com/_/centos?tab=tags&page=1&name=centos8) (71.4MB)
+|[CentOS](https://hub.docker.com/_/centos)|RedHatベースの代表的OS|`yum`|[latest (linux/amd64)](https://hub.docker.com/_/centos?tab=tags&page=1&name=centos8) (71.4MB)|
 
 ## URLs
 
