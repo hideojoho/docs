@@ -87,7 +87,10 @@ Successfully built 60f1a341a261
 Successfully tagged myimage/ubuntu-py3:20200712
 ```
 
-### 作成されたDockerイメージの確認
+### 作成したDockerイメージの確認
+
+- Dockerイメージには`IMAGE ID`が付与されます
+  - 今回の例：`60f1a341a261`
 
 ```
 $ docker images
@@ -95,7 +98,43 @@ REPOSITORY                   TAG                 IMAGE ID            CREATED    
 myimage/ubuntu-py3           20200712            60f1a341a261        33 seconds ago      391MB
 ```
 
+### 作成したDockerイメージの実行
+
+- 今回作成したイメージは再利用可能なVMです
+- 使用するときはイメージのコピーを展開して実行します。この展開されたものを「コンテナ」と呼びます
+  - イメージ同様、コンテナにも`CONTAINER ID`が付与されます
+- （紛らわしいですが、今度は）`PowerShell`から以下のコマンドを実行して、Dockerイメージを実行
+  - `--name py3`: コンテナの名前
+
+```
+PS C:\Users\アカウント名> docker run -d -it --name py3 myimage/ubuntu-py3:20200712
+```
+
+- 展開したコンテナの確認
+
+```
+PS C:\Users\アカウント名> docker ps -a
+CONTAINER ID        IMAGE                           COMMAND                  CREATED             STATUS                           PORTS               NAMES
+3d95188a998b        myimage/ubuntu-py3:20200712   "/bin/bash"              13 minutes ago      Up 13 minutes                                        py3
+```
+
+- 展開したコンテナ（Ubuntu Linux + Python3）へのログインとPythonの確認
+
+```
+PS C:\Users\アカウント名> docker exec -it py3 bash
+root@3d95188a998b:/# which python3
+/usr/bin/python3
+root@3d95188a998b:/# python3 -V
+Python 3.8.2
+root@3d95188a998b:/# which pip3
+/usr/bin/pip3
+root@3d95188a998b:/# pip3 -V
+pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.8)
+```
+
 ### Dockerイメージの削除（ホストPC）
+
+- VSCodeのターミナルから
 
 ```
 $ docker rmi [IMAGE ID]
@@ -105,6 +144,7 @@ $ docker rmi [IMAGE ID]
 
 - 個人的なDockerイメージをDocker Hubに公開する場合は、Docker Hubアカウントを作成します
 - Dockerイメージ構築コマンドで、ユーザ名の部分で、アカウント名を指定する
+- VSCodeのターミナルから
 
 ```
 $ docker push ユーザ名/イメージ名
