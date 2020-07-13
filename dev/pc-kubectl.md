@@ -17,6 +17,7 @@ Name                           Version          Source           Summary
 ----                           -------          ------           -------
 install-kubectl                1.7              PSGallery        This script is used during unsattended installs or to…
 
+C:\Users\アカウント名> Install-Script -Name install-kubectl -Scope CurrentUser -Force
 C:\Users\アカウント名> install-kubectl.ps1 'C:\Program Files\WindowsPowerShell\Modules\Kubectl'
 ==>Getting download link from  https://kubernetes.io/docs/tasks/tools/install-kubectl/
 ==>analyzing Downloadlink
