@@ -60,6 +60,14 @@ docs00.json  docs01.json  docs02.json  docs03.json  docs04.json  docs05.json  do
 
 ```
 docker run -it --rm -v $(pwd)/collections:/work/collections -v $(pwd)/index:/work/index hideojoho/anserini:0.9.5 /bin/bash -c "anserini/target/appassembler/bin/IndexCollection -threads 9 -collection JsonCollection -generator DefaultLuceneDocumentGenerator -input collections/msmarco-passage/collection_jsonl -index index/msmarco-passage/lucene-index-msmarco -storePositions -storeDocvectors -storeRaw"
+...
+2020-07-14 04:07:14,577 INFO  [main] index.IndexCollection (IndexCollection.java:875) - ============ Final Counter Values ============
+2020-07-14 04:07:14,577 INFO  [main] index.IndexCollection (IndexCollection.java:876) - indexed:        8,841,823
+2020-07-14 04:07:14,578 INFO  [main] index.IndexCollection (IndexCollection.java:877) - unindexable:            0
+2020-07-14 04:07:14,578 INFO  [main] index.IndexCollection (IndexCollection.java:878) - empty:                  0
+2020-07-14 04:07:14,578 INFO  [main] index.IndexCollection (IndexCollection.java:879) - skipped:                0
+2020-07-14 04:07:14,578 INFO  [main] index.IndexCollection (IndexCollection.java:880) - errors:                 0
+2020-07-14 04:07:14,582 INFO  [main] index.IndexCollection (IndexCollection.java:883) - Total 8,841,823 documents indexed in 00:03:20
 ```
 
 ## URLs
