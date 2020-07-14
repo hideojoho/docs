@@ -41,7 +41,7 @@ Enter query:
 - Download MS Marco Passage Dataset
 
 ```
-$ mkdir -P collections/msmarco-passage
+$ mkdir -p collections/msmarco-passage
 $ wget https://www.dropbox.com/s/9f54jg2f71ray3b/collectionandqueries.tar.gz -P collections/msmarco-passage
 $ tar xvfz collections/msmarco-passage/collectionandqueries.tar.gz -C collections/msmarco-passage
 ```
