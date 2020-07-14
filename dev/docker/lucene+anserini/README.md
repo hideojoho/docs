@@ -56,6 +56,12 @@ $ ls collections/msmarco-passage/collection_jsonl
 docs00.json  docs01.json  docs02.json  docs03.json  docs04.json  docs05.json  docs06.json  docs07.json  docs08.json
 ```
 
+- Index the collection
+
+```
+docker run -it --rm -v $(pwd)/collections:/work/collections -v $(pwd)/index:/work/index hideojoho/anserini:0.9.5 /bin/bash -c "anserini/target/appassembler/bin/IndexCollection -threads 9 -collection JsonCollection -generator DefaultLuceneDocumentGenerator -input collections/msmarco-passage/collection_jsonl -index index/msmarco-passage/lucene-index-msmarco -storePositions -storeDocvectors -storeRaw"
+```
+
 ## URLs
 
 - https://lucene.apache.org/core/8_5_2/demo/overview-summary.html#Indexing_Files
