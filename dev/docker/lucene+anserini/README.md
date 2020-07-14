@@ -3,9 +3,7 @@
 - Lucene 8.5.2
 - Anserini 0.9.5
 
-## Lucene
-
-### How to use Lucene
+## How to use Lucene
 
 - Run Lucene to index files in VM but produced index files are stored in a shared folder for later use
 
@@ -38,6 +36,27 @@ Enter query:
 ^C
 ```
 
+## How to use Anserini
+
+- Download MS Marco Passage Dataset
+
+```
+$ mkdir -P collections/msmarco-passage
+$ wget https://www.dropbox.com/s/9f54jg2f71ray3b/collectionandqueries.tar.gz -P collections/msmarco-passage
+$ tar xvfz collections/msmarco-passage/collectionandqueries.tar.gz -C collections/msmarco-passage
+```
+
+- Convert documents into JSON format
+
+```
+$ docker run -it --rm -v $(pwd)/collections:/work/collections hideojoho/anserini:0.9.5 /bin/bash -c "python3 anserini/tools/scripts/msmarco/convert_collection_to_jsonl.py --collection-path collections/msmarco-passage/collection.tsv --output-folder collections/msmarco-passage/collection_jsonl"
+...
+Done!
+$ ls collections/msmarco-passage/collection_jsonl
+docs00.json  docs01.json  docs02.json  docs03.json  docs04.json  docs05.json  docs06.json  docs07.json  docs08.json
+```
+
 ## URLs
 
 - https://lucene.apache.org/core/8_5_2/demo/overview-summary.html#Indexing_Files
+- https://github.com/castorini/anserini/blob/master/docs/experiments-msmarco-passage.md
