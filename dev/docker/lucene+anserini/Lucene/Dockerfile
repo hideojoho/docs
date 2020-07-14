@@ -19,11 +19,13 @@ RUN apt autoremove -y && apt clean
 # Lucene 8.5.2 をインストール
 RUN curl -O "https://ftp.tsukuba.wide.ad.jp/software/apache/lucene/java/8.5.2/lucene-8.5.2.tgz"
 RUN tar xvfz lucene-8.5.2.tgz
+ENV JAVA_HOME /usr/lib/jvm/default-java
 ENV LUCENE_HOME /work/lucene-8.5.2
 ENV CLASSPATH $CLASSPATH:$LUCENE_HOME/core/lucene-core-8.5.2.jar
 ENV CLASSPATH $CLASSPATH:$LUCENE_HOME/queryparser/lucene-queryparser-8.5.2.jar
 ENV CLASSPATH $CLASSPATH:$LUCENE_HOME/analysis/common/lucene-analyzers-common-8.5.2.jar
 ENV CLASSPATH $CLASSPATH:$LUCENE_HOME/demo/lucene-demo-8.5.2.jar
+RUN rm lucene-8.5.2.tgz
 # Set locale
 ENV LANG C.UTF-8
 ENV LC_ALL C.UTF-8
