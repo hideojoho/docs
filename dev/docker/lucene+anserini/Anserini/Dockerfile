@@ -12,3 +12,5 @@ RUN cd anserini && mvn clean package appassembler:assemble
 RUN cd /work/anserini/tools/eval && tar xvfz trec_eval.9.0.4.tar.gz && cd trec_eval.9.0.4 && make
 RUN cd /work/anserini/tools/eval/ndeval && make
 RUN cd /work
+# Python 3をインストール
+RUN apt install -y python3 python3-pip
