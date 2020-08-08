@@ -17,4 +17,10 @@ total 0
 -rwxrwxrwx 1 root root   0 Jul 20 03:00 please-make-your-folder-under-projects
 drwxrwxrwx 1 root root 102 Aug  7 09:08 projects
 ```
-  
+```
+[ ]: !ls -l ./shared
+total 4
+-rwxrwxrwx 1 1024 users 110 Jan 23  2020 000-DO-NOT-REDISTRIBUTE-再配布厳禁.txt
+-rwxrwxrwx 1 1024 users   0 Jul 13 04:34 000-READ-ONLY-AREA-読み込み専用エリア.txt
+drwxrwxrwx 1 1024 users  82 Jun 15 08:15 Datasets
+```
