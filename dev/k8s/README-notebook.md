@@ -14,19 +14,17 @@
   - ブラウザ経由
   - VSCode経由（おすすめ）
 
-## Jupyter Notebookの準備
-
-### ブラウザ経由で使用する場合
-- http://isr.slis.tsukuba.ac.jp にアクセス
+## ブラウザ経由で使用する場合
+- [JupyterHubログインページ](http://isr.slis.tsukuba.ac.jp/hub/login) にアクセス
   - 学外からのアクセスの場合は、VPN接続が必要です
 - 自分のGitHubアカウントで認証
   - ログインできない場合は、アカウントがwhitelistに追加されていない可能性がありますので、指導教員に連絡してください
 - Server Optionsから適したNotebookを選択
   - 初めは一番上の`jupyter/minimal-notebook`を選択しましょう
 
-### VSCode経由で使用する場合
+## VSCode経由で使用する場合
 - 「ブラウザ経由で使用する場合」の手順を実行し、Notebookを起動しておく
-- 画面上部メニュー「File」→「Control Panel」を選択
+- 画面上部メニュー「File」→「Hub Control Panel」を選択
 - 画面上部メニューから「Token」を選択
 - `Request My New Token`を選択し、表示されたトークンをコピペする
   - :warning: 本トークンは一度しか表示されないので注意
@@ -53,3 +51,15 @@
 ## 接続出来たら
 
 必ず[研究室クラスターのファイルやデータについて](README-data.md)を読んで、指示に従ってください。
+
+## Notebookの終了方法
+
+:bulb: 人間が寝ている間にコンピュータに仕事をさせるのは良い習慣です。それ以外の場合は、一日の終わりにNotebookを終了する習慣をつけてください。そうすることで、他のメンバーが使用されていないクラスター資源を活用できます。
+
+- ファイルやデータが[永続保存場所](README-data.md)にあることを確認する
+- VSCodeのJupyer Notebookを閉じる
+  - 自動的に研究室サーバとの接続が解除される
+- [JupyterHubホーム画面](http://isr.slis.tsukuba.ac.jp/hub/home)から`Stop My Server`を選択
+  - この時点で[永続保存場所](README-data.md)以外の一時ファイルは消えると考えてください
+  - サーバ停止するまでしばらく時間がかかります
+  - 右上から`Logout`を選択
