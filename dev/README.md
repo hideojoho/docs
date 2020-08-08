@@ -16,6 +16,12 @@
 
 * [Windows10用USBインストーラーの作成](pc-win10-installer-on-ubuntu.md)
 
+
+## 研究室クラスターの使い方
+
+- :bulb: [研究室クラスターについて](k8s/README.md)
+- [目的別研究室クラスター使用手順](k8s/README-index.md)
+
 ## PythonとJupyter Lab
 
 * [Pythonのインストール](pc-python.md)
