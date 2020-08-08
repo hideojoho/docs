@@ -10,3 +10,4 @@
 ## 目的別手順
 
 - [Linuxコマンド集](k8s-linux-commands.md)
+  - Pythonパッケージのインストール方法もここにあります
