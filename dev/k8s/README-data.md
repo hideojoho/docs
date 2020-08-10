@@ -12,7 +12,7 @@
     - 研究室サーバと同期・バックアップされる
     - 例：プログラムや研究室PCのHDDに収まる容量のデータなど
   - JupyterNotebook内
-    - `k8s_playground\projects`
+    - `playground\projects`
     - 上記フォルダ内に適当なプロジェクトフォルダ（例：`sample-project`）を作成し、関連ファイルを保存
     - 例：研究室PCのHDD
 HDDに収まらない容量のデータなど
