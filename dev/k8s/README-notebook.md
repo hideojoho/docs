@@ -15,7 +15,7 @@
   - VSCode経由（おすすめ）
 
 ## ブラウザ経由で使用する場合
-- [JupyterHubログインページ](http://isr.slis.tsukuba.ac.jp/jupyter/) にアクセス（要パスワード）
+- [JupyterHubログインページ](http://isr.slis.tsukuba.ac.jp/jupyter/) にアクセス
   - 学外からのアクセスの場合は、VPN接続が必要です
 - 自分のGitHubアカウントで認証
   - ログインできない場合は、アカウントがwhitelistに追加されていない可能性がありますので、指導教員に連絡してください
