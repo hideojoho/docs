@@ -15,7 +15,7 @@
   - VSCode経由（おすすめ）
 
 ## ブラウザ経由で使用する場合
-- [JupyterHubログインページ](http://isr.slis.tsukuba.ac.jp/hub/login) にアクセス
+- [JupyterHubログインページ](http://isr.slis.tsukuba.ac.jp/jupyter/) にアクセス（要パスワード）
   - 学外からのアクセスの場合は、VPN接続が必要です
 - 自分のGitHubアカウントで認証
   - ログインできない場合は、アカウントがwhitelistに追加されていない可能性がありますので、指導教員に連絡してください
@@ -38,7 +38,7 @@
     - `print('Hello')`
   - `Ctrl+Shift+P` → `remote`と入力し、`Python: Specify local or remote Jupyter servers for connection`を選択
   - `Existing`を選択し、表示された入力欄に以下のURLを入力
-    - `http://isr.slis.tsukuba.ac.jp/user/[github username]/?token=[token]`
+    - `http://isr.slis.tsukuba.ac.jp/jupyter/user/[github username]/?token=[token]`
     - `[github username]`: 自分のGitHubアカウント名
     - `[token]`: ↑で入手したtoken
   - 画面右下に表示される`Reload`ボタンを選択 → 左パネルからNotebookを選択
@@ -59,7 +59,7 @@
 - ファイルやデータが[永続保存場所](README-data.md)にあることを確認する
 - VSCodeのJupyer Notebookを閉じる
   - 自動的に研究室サーバとの接続が解除される
-- [JupyterHubホーム画面](http://isr.slis.tsukuba.ac.jp/hub/home)から`Stop My Server`を選択
+- [JupyterHubホーム画面](http://isr.slis.tsukuba.ac.jp/jupyter/home)から`Stop My Server`を選択
   - この時点で[永続保存場所](README-data.md)以外の一時ファイルは消えると考えてください
   - サーバ停止するまでしばらく時間がかかります
   - 右上から`Logout`を選択
