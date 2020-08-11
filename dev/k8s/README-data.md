@@ -48,4 +48,4 @@
 - データが手元のPCにある場合
   - Web版Synology Drive経由でプロジェクトフォルダにアップロード
 - データがウェブ上にある場合（ダウンロードする場合）
-  - [Notebookから直接ダウンロード](k8s/k8s-linux-commands.md)
+  - [`wget`コマンド](k8s-linux-commands.md)を使ってJupyterHubに直接ダウンロード
