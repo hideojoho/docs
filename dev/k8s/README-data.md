@@ -14,8 +14,7 @@
   - JupyterNotebook内
     - `playground\projects`
     - 上記フォルダ内に適当なプロジェクトフォルダ（例：`sample-project`）を作成し、関連ファイルを保存
-    - 例：研究室PCのHDD
-HDDに収まらない容量のデータなど
+      - プロジェクトフォルダの作成方法は「playgroundフォルダの使い方」を参照
 - Notebookからアクセス可能なフォルダの説明
   - `playground`: 書き込み可・永続保存・プロジェクト用
   - `shared`: 書き込み不可・永続保存・共有データ用
@@ -37,17 +36,11 @@ HDDに収まらない容量のデータなど
 ### `playground`フォルダの使い方
 
 - `playground`フォルダは研究室メンバーが誰でも書き込みできます
-- :warning: 他人が作成したフォルダを上書きすることも可能です
-- 必ずブラウザ版[Synology Drive](http://isr9.slis.tsukuba.ac.jp:5000/?launchApp=SYNO.SDS.Drive.Application)経由で自分のプロジェクト用フォルダをチームフォルダ > `k8s_playground` > `projects`の下に作成し、そのフォルダのみにデータの書き出しを行うようにしてください
+  - :warning: 他人が作成したフォルダを上書きすることも可能です
+- まずはブラウザ版[Synology Drive](http://isr9.slis.tsukuba.ac.jp:5000/?launchApp=SYNO.SDS.Drive.Application)経由で自分のプロジェクト用フォルダをチームフォルダ > `k8s_playground` > `projects`の下に作成し、そのフォルダのみにデータの書き出しを行うようにしてください
 - 研究室サーバの容量は巨大ですので、**基本的に一度作成したデータは削除しないでください**
   - そうすれば他人のデータを削除する過ちを回避できます
 
 ### 大きなファイルの`playground`へのアップロード方法
 
-開発や実験で大きなファイルを入力に使用する場合があると思いますが、20MBを超える大きさのファイルは、JupyterHubに直接アップロードすることができません。その場合は、以下の方法を試してください。
-
-- ブラウザで[Synology Drive](http://isr9.slis.tsukuba.ac.jp:5000/?launchApp=SYNO.SDS.Drive.Application)にログインする
-- カテゴリーから「チームフォルダ」→「k8s_playground」→「projects」を選択
-- 新しいプロジェクトフォルダを作成し、必要なファイルをアップロードする
-- JupyterHubのNotebookを一度Shutdownして、再起動する
-- 作成したプロジェクトフォルダで作業おこなう（必要に応じて、旧プロジェクトフォルダからファイルを移動しましょう）
+開発や実験で大きなファイルを入力に使用する場合があると思いますが、20MBを超える大きさのファイルは、JupyterHubに直接アップロードすることができません。その場合は、ブラウザ版Synology Driveのプロジェクトフォルダにアップロードしてみてください。
