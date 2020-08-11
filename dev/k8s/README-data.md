@@ -37,10 +37,10 @@
 
 - `playground`フォルダは研究室メンバーが誰でも書き込みできます
   - :warning: 他人が作成したフォルダを上書きすることも可能です
-- まずはブラウザ版[Synology Drive](http://isr9.slis.tsukuba.ac.jp:5000/?launchApp=SYNO.SDS.Drive.Application)経由で自分のプロジェクト用フォルダをチームフォルダ > `k8s_playground` > `projects`の下に作成し、そのフォルダのみにデータの書き出しを行うようにしてください
+- まずはWeb版[Synology Drive](http://isr9.slis.tsukuba.ac.jp:5000/?launchApp=SYNO.SDS.Drive.Application)経由で自分のプロジェクト用フォルダをチームフォルダ > `k8s_playground` > `projects`の下に作成し、そのフォルダのみにデータの書き出しを行うようにしてください
 - 研究室サーバの容量は巨大ですので、**基本的に一度作成したデータは削除しないでください**
   - そうすれば他人のデータを削除する過ちを回避できます
 
 ### 大きなファイルの`playground`へのアップロード方法
 
-開発や実験で大きなファイルを入力に使用する場合があると思いますが、20MBを超える大きさのファイルは、JupyterHubに直接アップロードすることができません。その場合は、ブラウザ版Synology Driveのプロジェクトフォルダにアップロードしてみてください。
+開発や実験で大きなファイルを入力に使用する場合があると思いますが、20MBを超える大きさのファイルは、JupyterHubに直接アップロードすることができません。その場合は、Web版Synology Driveのプロジェクトフォルダにアップロードしてみてください。
