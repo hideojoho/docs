@@ -69,3 +69,11 @@ total 4
 -rwxrwxrwx 1 1024 users   0 Jul 13 04:34 000-READ-ONLY-AREA-読み込み専用エリア.txt
 drwxrwxrwx 1 1024 users  82 Jun 15 08:15 Datasets
 ```
+
+## オンラインデータのダウンロード
+
+- 自分のプロジェクトフォルダに移動しておくのを忘れないようにしましょう
+
+```
+!wget URL
+```
