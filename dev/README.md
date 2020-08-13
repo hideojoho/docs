@@ -20,6 +20,7 @@
 ## 研究室クラスターの使い方
 
 - :bulb: [研究室クラスターについて](k8s/README.md)
+- [研究室クラスターのファイルやデータについて](k8s/README-data.md)
 - [目的別研究室クラスター使用手順](k8s/README-index.md)
 
 ## PythonとJupyter Lab
@@ -68,3 +69,11 @@ PythonのFlaskフレームワークを用いたウェブアプリの開発。デ
 - [PostgreSQLのインストール](pc-postgresql.md)
 - [Flaskを使ったウェブアプリ開発](webapp-flask.md)
 - [Herokuへのデプロイ](pc-heroku.md)
+
+## Javaアプリ開発環境
+
+GitHubで公開されているJavaアプリのソースコードを入手し、自分でコンパイルする方法。Solrサーチエンジンを例に、使います。
+
+- [JavaとAntのインストール](pc-java-ant.md)
+- [GitHubからソースコード入手](pc-github.md)
+- [Solrのコンパイルと実行](solr-dev.md)
