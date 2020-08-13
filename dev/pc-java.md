@@ -16,9 +16,16 @@ Javaアプリの実行ならばJava SDKを、Javaで書かれたアプリ開発�
 
 ### Java
 
+- [Javaのダウンロードページ](https://www.oracle.com/java/technologies/javase-jdk14-downloads.html)から、Java SE Development Kitの`Windows x64 Compressed Archive`をダウンロード
+- ダウンロードしたZipファイルを解凍
+- 解答されたフォルダ（例、`jdk-14.0.2`）を[第2作業エリア](pc-workspace.md)（例 `C:\Home\sNNNNNN`）に移動
+
 
 ### Ant
 
+- [Antのダウンロードページ](https://ant.apache.org/bindownload.cgi)から、`1.10.8 .zip archive`をダウンロード
+- ダウンロードしたZipファイルを解凍
+- 解答されたフォルダ（例、`apache-ant-1.10.8`）を[第2作業エリア](pc-workspace.md)（例 `C:\Home\sNNNNNN`）に移動
 
 ### Maven
 
