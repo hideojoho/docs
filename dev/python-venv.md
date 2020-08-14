@@ -57,8 +57,8 @@ server_port = '8983'
 server_core = 'techproducts'
 
 # Query (Field:Query_String)
-query_string = 'iPod'
 query_field = 'name'
+query_string = 'iPod'
 query = query_field + ':' + query_string
 
 # Connection
