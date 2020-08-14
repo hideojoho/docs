@@ -6,7 +6,7 @@ Pythonアプリの開発で、仮想環境を構築する手順。[Solr](solr.md
 
 - [Python](pc-python.md)
 - [VSCode](pc-vscode.md)
-- [Solr](solr.md) at http://localhost:8983 (`bin\solr.cmd start -e techproducts`)
+- [Solrサーバ](solr-server.md) (`bin\solr.cmd start -e techproducts`)
 
 ## 仮想環境の構築
 
