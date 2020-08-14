@@ -15,12 +15,12 @@ Solrのソースコードをフォークして、コンパイルする手順。�
 
 - [aparch/lucene-solrのレポジトリ](https://github.com/apache/lucene-solr)にいく
 - [GitHubを使った開発1](github-1.md)の手順にしたがって、レポジトリをフォークして、手元のPCにクローンする
-- `releases/lucene-solr/8.6.0`ブランチを選択
 
 ## ソースファイルのコンパイル
 
 以下はクローンしたレポジトリフォルダをVSCodeで開いていることを前提にしています。
 
+- `releases/lucene-solr/8.6.0`ブランチを選択
 - `` Ctrl+Shift+` ``でVSCode内でターミナルを起動
 - 以下のコマンドを実行し、ソースコード全体をコンパイル（:information_source: 15分ぐらいかかる）
   - コンパイル中は大量のメッセージが表示されるので、`-p`オプションを追加して、エラーや警告のみを表示するようにしています。
