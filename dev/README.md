@@ -76,4 +76,4 @@ GitHubで公開されているJavaアプリのソースコードを入手し、�
 
 - [Javaと開発ツールのインストール](pc-java.md)
 - [GitHubを使った開発1](github-1.md)
-- [Solrのコンパイルと実行](solr.md)
+- [Solrの開発](solr.md)
