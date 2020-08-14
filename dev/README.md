@@ -75,5 +75,5 @@ PythonのFlaskフレームワークを用いたウェブアプリの開発。デ
 GitHubで公開されているJavaアプリのソースコードを入手し、自分でコンパイルする方法。Solrサーチエンジンを例に、使います。
 
 - [Javaと開発ツールのインストール](pc-java.md)
-- [GitHubを使った開発1](dev-github-1.md)
-- [Solrのコンパイルと実行](dev-solr.md)
+- [GitHubを使った開発1](github-1.md)
+- [Solrのコンパイルと実行](solr.md)
