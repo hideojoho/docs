@@ -56,7 +56,7 @@ PS C:\Home\sNNNNNNN\Workspace\GitHub\lucene-solr\solr> .\bin\solr.cmd stop -p 89
 - 詳細：https://lucene.apache.org/solr/guide/8_6/learning-to-rank.html
 
 ```
-PS C:\Home\sNNNNNNN\Workspace\GitHub\lucene-solr\solr> .\bin\solr.cmd start -e techproducts -Dsolr.ltr.enabled=true
+PS C:\Home\sNNNNNNN\Workspace\GitHub\lucene-solr\solr> .\bin\solr.cmd start -e techproducts "-Dsolr.ltr.enabled=true"
 ```
 
 - http://localhost:8983/ に移動し、`JVM`の`Args`に`-Dsolr.ltr.enabled=true`が追加されていることを確認
@@ -77,7 +77,7 @@ PS C:\Home\sNNNNNNN\Workspace\GitHub\lucene-solr\solr> .\bin\solr.cmd start
 ```
 - ランク学習用サーバの起動（ポート番号：`8984`）
 ```
-PS C:\Home\sNNNNNNN\Workspace\GitHub\lucene-solr\solr> .\bin\solr.cmd start -e techproducts -Dsolr.ltr.enabled=true -p 8984
+PS C:\Home\sNNNNNNN\Workspace\GitHub\lucene-solr\solr> .\bin\solr.cmd start -e techproducts "-Dsolr.ltr.enabled=true" -p 8984
 ```
 - サーバの停止
 ```
