@@ -15,6 +15,7 @@ Solrのソースコードをフォークして、コンパイルする手順。�
 
 - [aparch/lucene-solrのレポジトリ](https://github.com/apache/lucene-solr)にいく
 - [GitHubを使った開発1](github-1.md)の手順にしたがって、レポジトリをフォークして、手元のPCにクローンする
+- `releases/lucene-solr/8.6.0`ブランチを選択
 
 ## ソースファイルのコンパイル
 
