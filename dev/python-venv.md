@@ -17,20 +17,20 @@ PS C:\Users\アカウント名> cd C:\Home\sNNNNNNN\Workspace\venv
 ```
 - `Solr`クライアント用仮想環境の構築
 ```
-PS C:\Home\sNNNNNNN\Workspace\venv> py -m venv solr
+PS C:\Home\sNNNNNNN\Workspace\venv> py -m venv solr-client
 ```
 
 ## VSCodeの準備
 
 - 構築した仮想環境フォルダをVSCodeで開く
-  - `C:\Home\sNNNNNNN\Workspace\venv\solr`
+  - `C:\Home\sNNNNNNN\Workspace\venv\solr-client`
 - `requirements.txt`を新規作成し、以下の内容を書き、保存
 ```
 pysolr==3.9.0
 urllib3==1.25.10
 ```
 - `` Ctrl+Shift+` ``でVSCode内にターミナルを起動
-  - 仮想環境が自動的に認識されて、ターミナルのプロンプト行の先頭に`(solr)`が表示されることを確認
+  - 仮想環境が自動的に認識されて、ターミナルのプロンプト行の先頭に`(solr-client)`が表示されることを確認
 
 ## Pythonモジュールのインストール
 
@@ -40,8 +40,8 @@ urllib3==1.25.10
 
 - VSCodeターミナルから以下を実行
 ```
-(solr) PS C:\Home\sNNNNNNN\Workspace\venv\solr> py -m pip install -U pip
-(solr) PS C:\Home\sNNNNNNN\Workspace\venv\solr> py -m pip install -r requirements.txt
+(solr-client) PS C:\Home\sNNNNNNN\Workspace\venv\solr-client> py -m pip install -U pip
+(solr-client) PS C:\Home\sNNNNNNN\Workspace\venv\solr-client> py -m pip install -r requirements.txt
 ```
 
 ## Solrクライアントの作成と実行
@@ -79,7 +79,7 @@ for result in results:
 
 - クライアントの実行
 ```
-(solr) PS C:\Home\sNNNNNNN\Workspace\venv\solr> python .\solr-client.py
+(solr-client) PS C:\Home\sNNNNNNN\Workspace\venv\solr-client> python .\solr-client.py
 Saw 3 result(s).
 The name is 'iPod & iPod Mini USB 2.0 Cable'.
 The name is 'Belkin Mobile Power Cord for iPod w/ Dock'. 
