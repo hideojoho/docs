@@ -65,3 +65,21 @@ PS C:\Home\sNNNNNNN\Workspace\GitHub\lucene-solr\solr> .\bin\solr.cmd start -e t
 - ソースコードをよく読み、理解し、変更を加える
 - ソースコードをコンパイルする
 - `Solr`を再起動し、変更内容をテストする
+
+## `Solr`の複数インスタンスの起動
+
+`Solr`サーバは、複数のインスタンスを同時起動することができます。各インスタンスには異なるポート番号を指定します。
+
+- デフォルトサーバの起動（ポート番号：`8983`）
+```
+PS C:\Home\sNNNNNNN\Workspace\GitHub\lucene-solr\solr> .\bin\solr.cmd start
+```
+- ランク学習用サーバの起動（ポート番号：`8984`）
+```
+PS C:\Home\sNNNNNNN\Workspace\GitHub\lucene-solr\solr> .\bin\solr.cmd start -e techproducts -Dsolr.ltr.enabled=true -p 8984
+```
+- サーバの停止
+```
+PS C:\Home\sNNNNNNN\Workspace\GitHub\lucene-solr\solr> .\bin\solr.cmd stop -p 8983
+PS C:\Home\sNNNNNNN\Workspace\GitHub\lucene-solr\solr> .\bin\solr.cmd stop -p 8984
+```
