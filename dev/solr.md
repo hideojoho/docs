@@ -84,3 +84,7 @@ PS C:\Home\sNNNNNNN\Workspace\GitHub\lucene-solr\solr> .\bin\solr.cmd start -e t
 PS C:\Home\sNNNNNNN\Workspace\GitHub\lucene-solr\solr> .\bin\solr.cmd stop -p 8983
 PS C:\Home\sNNNNNNN\Workspace\GitHub\lucene-solr\solr> .\bin\solr.cmd stop -p 8984
 ```
+
+## Solrクライアントの開発
+
+- [Solrクライアントの開発](python-venv.md)
