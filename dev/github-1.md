@@ -92,4 +92,4 @@ GitHubで公開されているソースコードはレポジトリという単�
 
 ## プルリクエスト
 
-- [GitHubを使った開発2](dev-github-2.md)
+- [GitHubを使った開発2](github-2.md)
