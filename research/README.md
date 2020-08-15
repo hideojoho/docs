@@ -1,8 +1,8 @@
 # Research Skills
 
-## Resources
+## Reading
 
-- [Research Datasets](datasets.md)
+- [Review Note template](../templates/review-note.md)
 
 ## Writing
 
@@ -16,3 +16,7 @@
 - Results
 - Discussion
 - Conclusion and Future Work
+
+## Resources
+
+- [Research Datasets](datasets.md)
