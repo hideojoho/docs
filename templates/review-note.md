@@ -6,6 +6,7 @@ Copy the template below and use it for your note.
 ## Review Note
 
 > This template is used for reading academic papers, not for textbook type of resources.
+> Make one review note file per paper.
 
 ### Bibliography
 
