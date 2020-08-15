@@ -3,5 +3,6 @@
 * [ゼミノート](seminar-note.md)
 * [文献レビューノート](review-note.md)
 * [ラボノート](lab-note.md)
-* [卒論・修論原稿](asciidoctor/README.md)
+* [プレゼンテーション](marp-lab/README.md)
+* [卒論・修論原稿](asciidoctor-thesis/README.md)
 * [後輩へのメッセージ](message-to-juniors.md)
