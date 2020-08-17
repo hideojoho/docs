@@ -46,6 +46,7 @@ PS C:\Users\アカウント名> dism.exe /online /enable-feature /featurename:Vi
 
 ```
 PS C:\Users\アカウント名> wsl --set-default-version 2
+WSL 2 との主な違いについては、https://aka.ms/wsl2 を参照してください
 ```
 
 ### Ubuntu 20.04のインストール
