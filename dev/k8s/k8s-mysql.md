@@ -1,5 +1,9 @@
 # MySQLデータベースの利用
 
+MySQLデータベースにPythonで接続して、表の作成、データ挿入、検索の行う方法。
+
+:bulb: Jupyer Notebookのターミナル機能を使って、直接MySQLコマンドを実行することも可能です。
+
 ## 前提
 
 - 指導教員に以下を依頼
@@ -8,14 +12,16 @@
 - Jupyter Notebookイメージ
   - `hideojoho/jupyter-mysql`を選択
 
-## Pythonパッケージのインストール
+## Pythonを使う場合
+
+### Pythonパッケージのインストール
 
 ```
 import sys
 !{sys.executable} -m pip install mysql-connector-python
 ```
 
-## MySQLデータベースへの接続
+### MySQLデータベースへの接続
 
 ```
 import mysql.connector
@@ -37,7 +43,7 @@ cnx = mysql.connector.connect(
 cursor = cnx.cursor()
 ```
 
-## 表構造データ
+### 表構造データ
 
 ```
 TABLES = {}
@@ -111,7 +117,7 @@ TABLES['titles'] = (
     ") ENGINE=InnoDB")
 ```
 
-## 表作成
+### 表作成
 
 ```
 for table_name in TABLES:
@@ -128,7 +134,7 @@ for table_name in TABLES:
         print("OK")
 ```
 
-## データ挿入
+### データ挿入
 
 ```
 tomorrow = datetime.datetime.now().date() + timedelta(days=1)
@@ -159,7 +165,7 @@ cursor.execute(add_salary, data_salary)
 cnx.commit()
 ```
 
-## 検索
+### 検索
 
 ```
 query = ("SELECT first_name, last_name, hire_date FROM employees "
@@ -176,12 +182,28 @@ for (first_name, last_name, hire_date) in cursor:
         last_name, first_name, hire_date))
 ```
 
-## データベース接続解除
+### データベース接続解除
 
 ```
 cursor.close()
 cnx.close()
 ```
+
+## ターミナルを使う場合
+
+:warning: JupyterHubのNotebookからターミナルを起動する必要があります。
+データベース接続に必要な情報はPythonを使う場合と同様です。
+
+```
+$ mysql -u DB_USER -h DB_HOST -p
+Enter password: DB_PASS
+...
+MariaDB [(none)]> use DB_NAME;
+MariaDB [(none)]> show tables;
+...
+MariaDB [(none)]> exit;
+```
+
 
 ## URLs
 
