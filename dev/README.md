@@ -77,3 +77,11 @@ GitHubで公開されているJavaアプリのソースコードを入手し、�
 - [Javaと開発ツールのインストール](pc-java.md)
 - [GitHubを使った開発1](github-1.md)
 - [Solrサーバの開発](solr-server.md)
+
+## Azure Cognitive Services クライアント開発
+
+[Azure Cognitive Services](https://azure.microsoft.com/ja-jp/services/cognitive-services/)
+で提供されているAPIのクライアントを構築します。
+
+- [リソースの取得](acs-resource.md)
+- [Bing検索API](acs-bingwebsearch.md)
