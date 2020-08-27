@@ -1,6 +1,8 @@
 # Review note
 
-Copy the template below and use it for your note.
+- Copy the template below and use it for your note.
+- Make one note file for one paper. Do not write two notes in one file.
+- File name should be `First-author`+`Publication Year` (e.g., `Joho-2020.md`, `Joho-2020a.md`, `Joho-2020b.md`, etc.)
 
 ```
 ## Review Note
