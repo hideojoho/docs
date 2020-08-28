@@ -7,6 +7,16 @@
 - [研究室クラスターNotebookの使い方](README-notebook.md)
 - [研究室クラスターのファイルやデータについて](README-data.md)
 
+## Pythonパッケージのインストール
+
+- :bulb: JupyterHubから起動したNotebook内では自由にパッケージをインストールして大丈夫です
+- `PACKAGE_NAME`: インストールしたいパッケージ名
+  
+```
+import sys
+!{sys.executable} -m pip install PACKAGE_NAME
+```
+
 ## 目的別手順
 
 - [Linuxコマンド集](k8s-linux-commands.md)
