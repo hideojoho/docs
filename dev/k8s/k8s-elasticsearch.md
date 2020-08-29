@@ -27,7 +27,7 @@ $ cp ~/shared/Datasets/k8s/certs/sNNNNNNN-k8s-config ~/.kube/config
 
 ```
 $ kubectl get all
-No resources ...
+No resources found in sNNNNNNN namespace.
 ```
 
 - プロジェクトフォルダの作成 (e.g., `my-eck-project`)（初回のみ実行）
