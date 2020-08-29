@@ -29,7 +29,7 @@ $ kubectl get all
 No resources found in sNNNNNNN namespace.
 ```
 
-- プロジェクトフォルダの作成 (e.g., `my-eck-project`)（初回のみ実行）
+- プロジェクトフォルダの作成 (e.g., `your-name/my-eck`)（初回のみ実行）
   - `your-name`の例
     - `sNNNNNNN`: 学籍番号
     - `hideojoho`: フルネーム
