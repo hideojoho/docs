@@ -36,10 +36,10 @@ No resources found in sNNNNNNN namespace.
 $ cp -R ~/shared/Datasets/k8s/projects/eck ~/playground/projects/your-name/my-eck
 $ cd ~/playground/projects/your-name/my-eck
 $ ls
-eck-1.yaml  eck-3.yaml  eck.ipynb
+es-1.yaml  es-3.yaml  es.ipynb
 ```
 
-- テスト用設定ファイル`eck-1.yaml`
+- テスト用設定ファイル`es-1.yaml`
   - Node: 1
   - HDD: 1Gi
 
@@ -47,7 +47,7 @@ eck-1.yaml  eck-3.yaml  eck.ipynb
 apiVersion: elasticsearch.k8s.elastic.co/v1
 kind: Elasticsearch
 metadata:
-  name: my-eck
+  name: my-es
 spec:
   version: 7.9.0
   nodeSets:
@@ -63,8 +63,8 @@ spec:
 - 実行
 
 ```
-$ kubectl apply -f eck-1.yaml
-elasticsearch.elasticsearch.k8s.elastic.co/my-eck created
+$ kubectl apply -f es-1.yaml
+elasticsearch.elasticsearch.k8s.elastic.co/my-es created
 ```
 
 - Elasticsearchのステータスが`green`になるまで待つ
@@ -72,17 +72,17 @@ elasticsearch.elasticsearch.k8s.elastic.co/my-eck created
 ```
 $ kubectl get elasticsearch
 NAME     HEALTH   NODES   VERSION   PHASE   AGE
-my-eck   green    1       7.9.0     Ready   97s
+my-es   green    1       7.9.0     Ready   97s
 ```
 
 - Elasticsearchのログインパスワードを入手する
 
 ```
-$ kubectl get secret my-eck-es-elastic-user -o=jsonpath='{.data.elastic}' | base64 --decode; echo
+$ kubectl get secret my-es-es-elastic-user -o=jsonpath='{.data.elastic}' | base64 --decode; echo
 ```
 
-- ノートブック（`eck.ipynb`）を実行する
-  - [eck.ipynb](ipynb/eck.ipynb)
+- ノートブック（`es.ipynb`）を実行する
+  - [es.ipynb](ipynb/es.ipynb)
 
 ## 本番用環境の実行
 
@@ -94,8 +94,8 @@ $ kubectl get secret my-eck-es-elastic-user -o=jsonpath='{.data.elastic}' | base
 - 既存インスタンスの停止
 
 ```
-$ kubectl delete -f eck-1.yaml
-elasticsearch.elasticsearch.k8s.elastic.co "my-eck" deleted
+$ kubectl delete -f es-1.yaml
+elasticsearch.elasticsearch.k8s.elastic.co "my-es" deleted
 ```
 
 - 停止の確認
@@ -105,7 +105,7 @@ $ kubectl get elastisearch
 error: the server doesn't have a resource type "elastisearch"
 ```
 
-- 本番用設定ファイル`eck-3.yaml`
+- 本番用設定ファイル`es-3.yaml`
   - Node: 3
   - HDD: 100GB max
 
@@ -113,7 +113,7 @@ error: the server doesn't have a resource type "elastisearch"
 apiVersion: elasticsearch.k8s.elastic.co/v1
 kind: Elasticsearch
 metadata:
-  name: my-eck
+  name: my-es
 spec:
   version: 7.9.0
   nodeSets:
@@ -139,8 +139,8 @@ spec:
 - 実行
 
 ```
-kubectl apply -f eck-3.yaml
-elasticsearch.elasticsearch.k8s.elastic.co/my-eck created
+kubectl apply -f es-3.yaml
+elasticsearch.elasticsearch.k8s.elastic.co/my-es created
 ```
 
 - Elasticsearchのステータスが`green`になるまで待つ
@@ -149,17 +149,17 @@ elasticsearch.elasticsearch.k8s.elastic.co/my-eck created
 ```
 $ kubectl get elasticsearch
 NAME     HEALTH   NODES   VERSION   PHASE   AGE
-my-eck   green    3       7.9.0     Ready   97s
+my-es   green    3       7.9.0     Ready   97s
 ```
 
 - Elasticsearchのログインパスワードを入手する
 
 ```
-$ kubectl get secret my-eck-es-elastic-user -o=jsonpath='{.data.elastic}' | base64 --decode; echo
+$ kubectl get secret my-es-es-elastic-user -o=jsonpath='{.data.elastic}' | base64 --decode; echo
 ```
 
-- ノートブック（`eck.ipynb`）を実行する
-  - [eck.ipynb](ipynb/eck.ipynb)
+- ノートブック（`es.ipynb`）を実行する
+  - [es.ipynb](ipynb/es.ipynb)
 
 
 ### 本番用環境の削除
@@ -167,5 +167,5 @@ $ kubectl get secret my-eck-es-elastic-user -o=jsonpath='{.data.elastic}' | base
 :warning: 索引ファイル等もすべて消えます。必要なデータは事前にバックアップしておきましょう。
 
 ```
-$ kubectl delete -f eck-3.yaml
+$ kubectl delete -f es-3.yaml
 ```
