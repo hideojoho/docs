@@ -89,8 +89,7 @@ service/my-eck-es-http patched
 - Elasticsearchのログインパスワードを入手する
 
 ```
-$ PASSWORD=$(kubectl get secret my-eck-es-elastic-user -o go-template='{{.data.elastic | base64decode}}')
-$ echo $PASSWORD
+$ kubectl get secret my-eck-es-elastic-user -o=jsonpath='{.data.elastic}' | base64 --decode; echo
 ```
 
 - ノートブックを実行する（`eck.ipynb`）
