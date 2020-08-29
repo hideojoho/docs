@@ -75,17 +75,6 @@ NAME     HEALTH   NODES   VERSION   PHASE   AGE
 my-eck   green    1       7.9.0     Ready   97s
 ```
 
-- Elasticsearchをクラスターノードに公開
-  - 自分のポート番号を決める：30000-32767 → 下記の`YOUR_PORT_NUMBER`を置き換える
-  - エラーが出た場合は、別の番号を試す
-
-```
-$ kubectl patch service my-eck-es-http --type='json' -p='[{"op": "replace", "path": "/spec/type", "value": "NodePort"}]'
-service/my-eck-es-http patched
-$ kubectl patch service my-eck-es-http --type='json' -p='[{"op": "replace", "path": "/spec/ports/0/nodePort", "value": YOUR_PORT_NUMBER}]'
-service/my-eck-es-http patched
-```
-
 - Elasticsearchのログインパスワードを入手する
 
 ```
@@ -161,16 +150,6 @@ elasticsearch.elasticsearch.k8s.elastic.co/my-eck created
 $ kubectl get elasticsearch
 NAME     HEALTH   NODES   VERSION   PHASE   AGE
 my-eck   green    3       7.9.0     Ready   97s
-```
-
-- Elasticsearchにクラスターノードに公開
-  - 前回同様に自分のポート番号を決める：30000-32767 → 下記の`YOUR_PORT_NUMBER`を置き換える
-  - 前回と同じポート番号を用いることも可
-  - エラーが出た場合は、別の番号を試す
-
-```
-$ kubectl patch service my-eck-es-http --type='json' -p='[{"op": "replace", "path": "/spec/type", "value": "NodePort"}]'
-$ kubectl patch service my-eck-es-http --type='json' -p='[{"op": "replace", "path": "/spec/ports/0/nodePort", "value": YOUR_PORT_NUMBER}]'
 ```
 
 - Elasticsearchのログインパスワードを入手する
