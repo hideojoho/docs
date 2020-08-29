@@ -36,7 +36,7 @@ No resources found in sNNNNNNN namespace.
 $ cp -R ~/shared/Datasets/k8s/projects/eck ~/playground/projects/your-name/my-eck
 $ cd ~/playground/projects/your-name/my-eck
 $ ls
-es-1.yaml  es-3.yaml  es.ipynb
+es-1.yaml  es-3.yaml  es.ipynb  ingress-kbn.yaml  kbn-1.yaml
 ```
 
 - テスト用設定ファイル`es-1.yaml`
