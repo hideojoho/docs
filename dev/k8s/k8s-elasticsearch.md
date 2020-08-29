@@ -92,7 +92,8 @@ service/my-eck-es-http patched
 $ kubectl get secret my-eck-es-elastic-user -o=jsonpath='{.data.elastic}' | base64 --decode; echo
 ```
 
-- ノートブックを実行する（`eck.ipynb`）
+- ノートブック（`eck.ipynb`）を実行する
+  - [eck.ipynb](ipynb/eck.ipynb)
 
 ## 本番用環境の実行
 
@@ -179,7 +180,8 @@ $ PASSWORD=$(kubectl get secret my-eck-es-elastic-user -o go-template='{{.data.e
 $ echo $PASSWORD
 ```
 
-- ノートブックを実行する（`eck.ipynb`）
+- ノートブック（`eck.ipynb`）を実行する
+  - [eck.ipynb](ipynb/eck.ipynb)
 
 
 ### 本番用環境の削除
