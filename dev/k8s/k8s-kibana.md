@@ -11,7 +11,7 @@
 ## インスタンスのデプロイ
 
 - 設定ファイル`kbn-1.yaml`の編集
-  - `<your-app-path>`を`sNNNNNNN-kbn`等に変更する
+  - `<your-app-path>`を`/sNNNNNNN-kbn`等に変更する（`/`は必須）
   - `sNNNNNNN`は学籍番号
 
 ```
