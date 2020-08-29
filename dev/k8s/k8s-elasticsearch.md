@@ -65,6 +65,7 @@ spec:
 
 ```
 $ kubectl apply -f eck-1.yaml
+elasticsearch.elasticsearch.k8s.elastic.co/my-eck created
 ```
 
 - Elasticsearchのステータスが`green`になるまで待つ
@@ -147,6 +148,7 @@ spec:
 
 ```
 kubectl apply -f eck-3.yaml
+elasticsearch.elasticsearch.k8s.elastic.co/my-eck created
 ```
 
 - Elasticsearchのステータスが`green`になるまで待つ
