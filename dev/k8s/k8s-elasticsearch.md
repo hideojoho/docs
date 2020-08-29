@@ -20,7 +20,7 @@
 
 ```
 $ mkdir ~/.kube
-$ cp ~/shared/Datasets/k8s/certs/your_student_id-k8s-config ~/.kube/config
+$ cp ~/shared/Datasets/k8s/certs/sNNNNNNN-k8s-config ~/.kube/config
 ```
 
 - コンフィグファイルの動作確認（新規ノートブックサーバ起動時に毎回実行）
@@ -34,8 +34,8 @@ No resources ...
   - `sNNNNNNN`: 学籍番号
 
 ```
-$ cp -R ~/playground/projects/sample-eck-project ~/playground/projects/sNNNNNNN/my-eck-project
-$ cd ~/playground/projects/sNNNNNNN/my-eck-project
+$ cp -R ~/shared/Datasets/k8s/projects/eck ~/playground/projects/sNNNNNNN/my-eck
+$ cd ~/playground/projects/sNNNNNNN/my-eck
 $ ls
 eck-1.yaml  eck-3.yaml  eck.ipynb
 ```
