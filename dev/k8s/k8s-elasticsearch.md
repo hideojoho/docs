@@ -169,3 +169,7 @@ $ kubectl get secret my-es-es-elastic-user -o=jsonpath='{.data.elastic}' | base6
 ```
 $ kubectl delete -f es-3.yaml
 ```
+
+## データの可視化と分析
+
+- [Kibanaの利用](k8s-kibana.md)
