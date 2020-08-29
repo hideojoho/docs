@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<title>Joho Lab Kubernetes Cluster</title>
+</head>
+<body>
+<div class="mx-auto" style="margin-top:1em;width: 640px;">
+  <header>
+	<h3>上保研究室Kubernetesクラスター Joho Lab Kubernetes Cluster</h3>
+	<p><a href="https://github.com/hideojoho/kb/tree/ja/dev/k8s">研究室クラスターの使い方</a> How to ues the lab cluster</p>
+	<nav>
+	<hr/>
+	<p>要パスワード Password Protected</p>
+	<ul>
+		<li><a href="/jupyter/">JupyterHub</a></li>
+		<li><a href="http://isr9.slis.tsukuba.ac.jp:5000/drive/">Synology Drive</a></li>
+		<!--
+		<li><a href="/kiwix/">Wikipedia Clone</a></li>
+		<li><a href="/es/">ElasticSearch</a></li>
+		<li><a href="/kibana/">Kibana</a></li>
+		<li><a href="/fess/">FESS</a></li>
+		<li><a href="/solr/">Solr</a></li>
+		//-->
+	</ul>
+	</nav>
+  </header>
+  <main>
+    <p>いつクラスターを使うのか When should I use the cluster?</p>
+	<ul>
+	  <li>研究室PCの容量を超えたデータ処理 When you need to process a data which is beyond a lab PC's storage</li>
+	  <li>数時間かかるデータ処理 When you have a process that can continue for several hours</li>
+	  <li>GPUが必要なデータ処理 When you need a GPU to process a data</li>
+    </ul>
+	<p>クラスターを使用する前に Before you use the cluster</p>
+	<ul>
+	  <li>研究室PCは意外と高性能です。 Lab PC's spec is not bad actually</li>
+	  <li>研究室PCでサンプルデータの処理を完成させましょう Make sure to complete your program with a small sample</li>
+	  <li>小さなデータから大きなデータに移行するのは良い習慣です。It's a good practice to move from a small dataset to a large dataset</li>
+	  <li><b>必ず<a href="https://github.com/hideojoho/kb/tree/ja/dev/k8s">研究室クラスターの使い方</a>を読んでください</b>。Make sure to read the How to ues lab cluster very carefully</li>
+	</ul>
+  </main>
+  <footer>
+	<hr/>
+	<a href="https://github.com/hideojoho/kb/tree/ja">研究室ナレッジベース</a>
+	<a href="https://github.com/hideojoho/kb/tree/en">Lab Knowledge Base</a>
+	<br/>
+	<a href="https://docs.joholab.com/lab/v/ja/">研究室ホームページ</a>
+	<a href="https://docs.joholab.com/lab/v/en/">Lab Website</a>
+	<br/>
+	<a href="https://github.com/ISRTsukuba/">Lab at GitHub</a>
+	<hr/>
+	<p>管理者用 Admin</p>
+	<ul>
+		<li><a href="/dashboard/">Kubernetes Dashboard</a></li>
+		<li><a href="/zabbix/">Zabbix Dashboard</a></li>
+	</ul>
+  </footer>
+</div>
+</body>
+</html>
