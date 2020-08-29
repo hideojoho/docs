@@ -23,19 +23,20 @@ $ mkdir ~/.kube
 $ cp ~/shared/Datasets/k8s/certs/sNNNNNNN-k8s-config ~/.kube/config
 ```
 
-- コンフィグファイルの動作確認（新規ノートブックサーバ起動時に毎回実行）
-
+- コンフィグファイルの動作確認
 ```
 $ kubectl get all
 No resources found in sNNNNNNN namespace.
 ```
 
 - プロジェクトフォルダの作成 (e.g., `my-eck-project`)（初回のみ実行）
-  - `sNNNNNNN`: 学籍番号
+  - `your-name`の例
+    - `sNNNNNNN`: 学籍番号
+    - `hideojoho`: フルネーム
 
 ```
-$ cp -R ~/shared/Datasets/k8s/projects/eck ~/playground/projects/sNNNNNNN/my-eck
-$ cd ~/playground/projects/sNNNNNNN/my-eck
+$ cp -R ~/shared/Datasets/k8s/projects/eck ~/playground/projects/your-name/my-eck
+$ cd ~/playground/projects/your-name/my-eck
 $ ls
 eck-1.yaml  eck-3.yaml  eck.ipynb
 ```
@@ -82,7 +83,9 @@ my-eck   green    1       7.9.0     Ready   97s
 
 ```
 $ kubectl patch service my-eck-es-http --type='json' -p='[{"op": "replace", "path": "/spec/type", "value": "NodePort"}]'
+service/my-eck-es-http patched
 $ kubectl patch service my-eck-es-http --type='json' -p='[{"op": "replace", "path": "/spec/ports/0/nodePort", "value": YOUR_PORT_NUMBER}]'
+service/my-eck-es-http patched
 ```
 
 - Elasticsearchのログインパスワードを入手する
