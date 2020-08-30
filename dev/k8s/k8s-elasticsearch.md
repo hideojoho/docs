@@ -208,6 +208,13 @@ $ kubectl apply -f es-1.yaml
 elasticsearch.elasticsearch.k8s.elastic.co/my-es configured
 ```
 
+- 確認
+
+```
+$ kubectl exec -it my-es-es-default-0 -- /usr/share/elasticsearch/bin/elasticsearch-plugin list
+analysis-kuromoji
+```
+
 ## データの可視化と分析
 
 - [Kibanaの利用](k8s-kibana.md)
