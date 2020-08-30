@@ -11,7 +11,7 @@
 ## インスタンスのデプロイ
 
 - 設定ファイル`kbn-1.yaml`の編集
-  - `<your-app-path>`を`/sNNNNNNN-kbn`等に変更する（`/`は必須）
+  - `<your-app-path>`を`/sNNNNNNN/kibana`等に変更する
   - `sNNNNNNN`は学籍番号
 
 ```
@@ -35,7 +35,7 @@ spec:
       - name: kibana
         env:
         - name: SERVER_BASEPATH
-          value: "<your-app-path>" # Change to "/sNNNNNNN-kbn"
+          value: "<your-app-path>" # Change to "/sNNNNNNN/kibana"
 ```
 
 - 実行
@@ -72,7 +72,7 @@ spec:
   - host: isr.slis.tsukuba.ac.jp
     http:
       paths:
-      - path: /<your-app-path>/(.*)$  # Change it to /sNNNNNNN-kbn/(.*)$
+      - path: /<your-app-path>/(.*)$  # Change it to /sNNNNNNN/kibana/(.*)$
         backend:
           serviceName: my-kbn-kb-http
           servicePort: 5601
@@ -87,8 +87,7 @@ ingress.extensions/my-kbn created
 
 ## Kibanaへのアクセス
 
-- https://isr.slis.tsukuba.ac.jp/sNNNNNNN-kbn/
-  - `sNNNNNNN-kbn`：自分で設定したパス
+- https://isr.slis.tsukuba.ac.jp/sNNNNNNN/kibana/
   - ユーザ名：`elastic`
   - パスワード：以下の手順で入手
 
