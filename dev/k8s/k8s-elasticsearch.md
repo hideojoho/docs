@@ -172,7 +172,7 @@ $ kubectl delete -f es-3.yaml
 
 ## プラグインのインストール
 
-- [日本語アナライザー（kuromoji）https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-kuromoji.html)プラグインの例
+- [日本語アナライザー（kuromoji）](https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-kuromoji.html)プラグインの例
 - 設定ファイルの変更
 
 ```
