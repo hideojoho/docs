@@ -170,6 +170,44 @@ $ kubectl get secret my-es-es-elastic-user -o=jsonpath='{.data.elastic}' | base6
 $ kubectl delete -f es-3.yaml
 ```
 
+## プラグインのインストール
+
+- [日本語アナライザー（kuromoji）https://www.elastic.co/guide/en/elasticsearch/plugins/current/analysis-kuromoji.html)プラグインの例
+- 設定ファイルの変更
+
+```
+apiVersion: elasticsearch.k8s.elastic.co/v1
+kind: Elasticsearch
+metadata:
+  name: my-es
+spec:
+  version: 7.9.0
+  nodeSets:
+  - name: default
+    count: 1
+    config:
+      node.master: true
+      node.data: true
+      node.ingest: true
+      node.store.allow_mmap: false
+    podTemplate:
+      spec:
+        initContainers:
+        - name: install-plugins
+          command:
+          - sh
+          - -c
+          - |
+            bin/elasticsearch-plugin install analysis-kuromoji
+```
+
+- 実行
+
+```
+$ kubectl apply -f es-1.yaml
+elasticsearch.elasticsearch.k8s.elastic.co/my-es configured
+```
+
 ## データの可視化と分析
 
 - [Kibanaの利用](k8s-kibana.md)
