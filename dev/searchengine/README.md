@@ -35,8 +35,8 @@ Microsoftが提供する商用ウェブ検索サービス。多様なAPIを提�
 
 ### 手順書
 
-- [システムのインストールと基本利用](searchengine/bing/1-install.md)
-  - [多機能版APIサーバ](acs-bingsearch-python.md)
+- [システムのインストールと基本利用](bing/1-install.md)
+  - [多機能版APIサーバ](../acs-bingsearch-python.md)
 - クライアント開発
   - Web UI
   - チャットボット
