@@ -80,3 +80,4 @@ Press (q)uit or enter number to jump to a page.
 ## URLs
 
 - https://lucene.apache.org/core/quickstart.html
+- https://lucene.apache.org/core/8_6_1/index.html

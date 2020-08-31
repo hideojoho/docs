@@ -52,6 +52,7 @@ Solr / Elasticsearch / FESS / Anserini に基本機能を提供している根�
 ### 手順書
 
 - [システムのインストールと基本利用](lucene/1-install.md)
+- [ソースファイルのコンパイル](lucene/3-compile.md)
 
 ## Solr
 
