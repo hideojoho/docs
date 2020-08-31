@@ -31,6 +31,8 @@ urllib3==1.25.10
 ```
 - `` Ctrl+Shift+` ``でVSCode内にターミナルを起動
   - 仮想環境が自動的に認識されて、ターミナルのプロンプト行の先頭に`(solr-client)`が表示されることを確認
+  - 仮想環境が認識されない場合は、`Ctrl+Shift+P`でコマンドパレットを開き、`python select interpreter`と入力し、その後の手順にしたがって、`C:\Home\sNNNNNNN\Workspace\venv\solr-client\Scripts\python.exe`を選択
+    - 選択する`python.exe`は仮想環境ごとに変える必要があるので注意すること
 
 ## Pythonモジュールのインストール
 

@@ -93,11 +93,15 @@ client = WebSearchClient(endpoint=EP, credentials=CognitiveServicesCredentials(K
 
 @app.route("/", methods=['GET'])
 def index():
-    response = []
+    # q parameter is not given
+    if 'q' not in request.args:
+        return { "status": "Ready" }
+    # Empty query is given
     q = request.args.get('q', default=None, type=str)
     if not q:
-        return { "response": response }
-
+        return { "response": None }
+    # Query is given
+    response = []
     web_data = client.web.search(query=q)
     if hasattr(web_data.web_pages, 'value'):
         response = []
@@ -112,9 +116,7 @@ def index():
             "response": response
         }
     else:
-        return {
-            "response": None
-        }
+      return { "response": None }
 
 if __name__ == "__main__":
     app.run(debug=True)
