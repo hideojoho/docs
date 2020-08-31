@@ -68,7 +68,7 @@ First web page URL: https://www.nps.gov/yose/index.htm
 ```
 
 
-- `requirements.txt`に以下を追加し、モジュールをインストール
+- `requirements.txt`に以下を追加し、モジュールをインストール（`py -m pip install -r requirements.txt`）
 
 ```
 flask
@@ -94,29 +94,27 @@ client = WebSearchClient(endpoint=EP, credentials=CognitiveServicesCredentials(K
 
 @app.route("/", methods=['GET'])
 def index():
+    response = []
     q = request.args.get('q', default=None, type=str)
+    if not q:
+        return { "response": response }
 
-    if q:
-        web_data = client.web.search(query=q)
-        if hasattr(web_data.web_pages, 'value'):
-            response = []
-            for i in range(len(web_data.web_pages.value)):
-                page = {
-                    "title": web_data.web_pages.value[i].name,
-                    "url": web_data.web_pages.value[i].url,
-                    "snippet": web_data.web_pages.value[i].snippet
-                }
-                response.append(page)
-            return {
-                "response": response
+    web_data = client.web.search(query=q)
+    if hasattr(web_data.web_pages, 'value'):
+        response = []
+        for i in range(len(web_data.web_pages.value)):
+            page = {
+                "title": web_data.web_pages.value[i].name,
+                "url": web_data.web_pages.value[i].url,
+                "snippet": web_data.web_pages.value[i].snippet
             }
-        else:
-            return {
-                "response": None
-            }
+            response.append(page)
+        return {
+            "response": response
+        }
     else:
         return {
-            "Status": "Ready"
+            "response": None
         }
 
 if __name__ == "__main__":
