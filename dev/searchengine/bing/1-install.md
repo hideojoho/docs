@@ -28,11 +28,12 @@ from azure.cognitiveservices.search.websearch import WebSearchClient
 from azure.cognitiveservices.search.websearch.models import SafeSearch
 from msrest.authentication import CognitiveServicesCredentials
 
-# Replace with your subscription key.
-subscription_key = "YOUR_SUBSCRIPTION_KEY"
+# Replace with your subscription key and endpoint
+KEY = "YOUR_SUBSCRIPTION_KEY"
+EP = "YOUR_ENDPOINT"
 
 # Instantiate the client and replace with your endpoint.
-client = WebSearchClient(endpoint="YOUR_ENDPOINT", credentials=CognitiveServicesCredentials(subscription_key))
+client = WebSearchClient(endpoint="EP", credentials=CognitiveServicesCredentials(KEY))
 
 # Make a request. Replace Yosemite if you'd like.
 QUERY = "Yosemite"
@@ -84,11 +85,12 @@ from flask import *
 
 app = Flask(__name__)
 
-# Replace with your subscription key.
-subscription_key = "YOUR_SUBSCRIPTION_KEY"
+# Replace with your subscription key and endpoint
+KEY = "YOUR_SUBSCRIPTION_KEY"
+EP = "YOUR_ENDPOINT"
 
 # Instantiate the client and replace with your endpoint.
-client = WebSearchClient(endpoint="YOUR_ENDPOINT", credentials=CognitiveServicesCredentials(subscription_key))
+client = WebSearchClient(endpoint="EP", credentials=CognitiveServicesCredentials(KEY))
 
 @app.route("/", methods=['GET'])
 def index():
