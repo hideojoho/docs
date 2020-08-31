@@ -41,6 +41,7 @@ Microsoftが提供する商用ウェブ検索サービス。多様なAPIを提�
   - Web UI
     - [Python](bing/2-client-python.md)
   - チャットボット
+    - [Bot Framework](bing/2-client-bot.md)
 
 ## Lucene
 
