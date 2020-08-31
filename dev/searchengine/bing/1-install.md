@@ -1,6 +1,6 @@
 # Bing Web検索のインストールと基本利用
 
-## 前提
+## 準備
 
 - [Azureリソースの取得](../../acs-resource.md)
 - 作成したBing Web検索用リソースの左パネルから「キーとエンドポイント」を選択
@@ -67,8 +67,7 @@ First web page URL: https://www.nps.gov/yose/index.htm
 検索UI <--> APIクライアントサーバ <--> Bing検索
 ```
 
-
-- `requirements.txt`に以下を追加し、モジュールをインストール（`py -m pip install -r requirements.txt`）
+- `requirements.txt`に以下を追加し、モジュールをインストール
 
 ```
 flask
