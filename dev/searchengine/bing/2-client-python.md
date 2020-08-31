@@ -44,6 +44,7 @@ from flask import *
 app = Flask(__name__)
 
 app_name = "Bing Web検索 UI"
+app_port = 5001
 bing_search_url = "http://localhost:5000"
 
 @app.route("/", methods=['GET'])
@@ -65,7 +66,7 @@ def bing_search(query):
   return results
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5001)
+    app.run(debug=True, port=app_port)
 ```
 
 - `layout.html`
@@ -78,6 +79,7 @@ if __name__ == "__main__":
     <title>{{ title }}</title>
   </head>
   <body>
+    <h1>{{ title }}</h1>
     {% block content %}{% endblock %}
   </body>
 </html>
@@ -88,7 +90,6 @@ if __name__ == "__main__":
 ```
 {% extends "layout.html" %}
 {% block content %}
-<h1>{{ title }}</h1>
 {% include "form.html" %}
 {% endblock %}
 ```
@@ -106,7 +107,6 @@ if __name__ == "__main__":
 ```
 {% extends "layout.html" %}
 {% block content %}
-<h1>{{ title }}</h1>
 {% with query = query, results = results %} 
   {% include "form.html" %}
   {% include "serp.html" %}
