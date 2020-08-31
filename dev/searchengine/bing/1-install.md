@@ -59,12 +59,12 @@ First web page name: Yosemite National Park (U.S. National Park Service)
 First web page URL: https://www.nps.gov/yose/index.htm
 ```
 
-## APIサーバの構築
+## APIクライアントサーバの構築
 
-検索UIからアクセスするためのAPIサーバ
+検索UIからアクセスするためのAPIクライアントサーバ
 
 ```
-検索UI <--> APIサーバ <--> Bing検索
+検索UI <--> APIクライアントサーバ <--> Bing検索
 ```
 
 
@@ -123,7 +123,7 @@ if __name__ == "__main__":
     app.run(debug=True)
 ```
 
-## APIサーバの実行
+## APIクライアントサーバの実行
 
 ```
  (bing-search) PS C:\Home\sNNNNNNN\Workspace\venv\bing-search> py .\bingwebsearch-app.py
@@ -138,7 +138,7 @@ if __name__ == "__main__":
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
 
-## APIサーバのテスト
+## APIクライアントサーバのテスト
 
 - http://127.0.0.1:5000/
 
@@ -181,9 +181,9 @@ if __name__ == "__main__":
 }
 ```
 
-## 多機能版APIサーバ
+## 多機能版APIクライアントサーバ
 
-- [多機能版APIサーバ](../../acs-bingsearch-python.md)
+- [多機能版APIクライアントサーバ](../../acs-bingsearch-python.md)
 
 ## URLs
 
