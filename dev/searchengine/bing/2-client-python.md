@@ -97,7 +97,7 @@ if __name__ == "__main__":
 
 ```
 <form action="/" method="GET">
-  <input type="search" name="q" placeholder="キーワードを入力"><input type="submit">
+  <input type="search" name="q" placeholder="キーワードを入力" value="{{ query }}"> <input type="submit">
 </form>
 ```
 
