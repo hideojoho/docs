@@ -139,6 +139,11 @@ if __name__ == "__main__":
 - http://localhost:5001
   
 
+## 発展のアイディア
+
+- `templates`フォルダ以下のhtmlファイルを編集して、Web UIの見た目を変えたり、Javascriptを使って動的な機能を導入する
+- [多機能版APIクライアントサーバ](../../acs-bingsearch-python.md)に切り替えて、UIからカテゴリー別検索ができるようにする
+
 ## URLs
 
 - https://flask.palletsprojects.com/en/1.1.x/
