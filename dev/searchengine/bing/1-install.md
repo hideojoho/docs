@@ -33,7 +33,7 @@ KEY = "YOUR_SUBSCRIPTION_KEY"
 EP = "YOUR_ENDPOINT"
 
 # Instantiate the client and replace with your endpoint.
-client = WebSearchClient(endpoint="EP", credentials=CognitiveServicesCredentials(KEY))
+client = WebSearchClient(endpoint=EP, credentials=CognitiveServicesCredentials(KEY))
 
 # Make a request. Replace Yosemite if you'd like.
 QUERY = "Yosemite"
@@ -90,7 +90,7 @@ KEY = "YOUR_SUBSCRIPTION_KEY"
 EP = "YOUR_ENDPOINT"
 
 # Instantiate the client and replace with your endpoint.
-client = WebSearchClient(endpoint="EP", credentials=CognitiveServicesCredentials(KEY))
+client = WebSearchClient(endpoint=EP, credentials=CognitiveServicesCredentials(KEY))
 
 @app.route("/", methods=['GET'])
 def index():

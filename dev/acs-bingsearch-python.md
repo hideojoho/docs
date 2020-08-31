@@ -1,10 +1,10 @@
 # Bing検索（Python SDK）
 
 ```
-検索UI <--> APIサーバ <--> Bing検索
+検索UI <--> APIクライアントサーバ <--> Bing検索
 ```
 
-## APIサーバ
+## APIクライアントサーバ
 
 パラメータ
 - `q`: クエリ
@@ -27,8 +27,9 @@ from flask import *
 
 app = Flask(__name__)
 
-# Replace with your subscription key.
-subscription_key = "YOUR_SUBSCRIPTION_KEY"
+# Replace with your subscription key and endpoint
+KEY = "YOUR_SUBSCRIPTION_KEY"
+EP = "YOUR_ENDPOINT"
 
 @app.route("/", methods=['GET'])
 def index():
@@ -39,8 +40,8 @@ def index():
 
     ct = request.args.get('ct', default='web', type=str)
     if ct == 'web':
-        client = WebSearchClient(endpoint="YOUR_ENDPOINT",
-                        credentials=CognitiveServicesCredentials(subscription_key))
+        client = WebSearchClient(endpoint=EP,
+                        credentials=CognitiveServicesCredentials(KEY))
         result = client.web.search(query=q)
         if hasattr(result.web_pages, 'value'):
             for i in range(len(result.web_pages.value)):
@@ -51,8 +52,8 @@ def index():
                 }
                 response.append(page)
     if ct == 'image':
-        client = ImageSearchClient(endpoint="YOUR_ENDPOINT",
-                        credentials=CognitiveServicesCredentials(subscription_key))
+        client = ImageSearchClient(endpoint=EP,
+                        credentials=CognitiveServicesCredentials(KEY))
         result = client.images.search(query=q)
         if hasattr(result, 'value'):
             for i in range(len(result.value)):
@@ -61,8 +62,8 @@ def index():
                 }
                 response.append(page)
     if ct == 'news':
-        client = NewsSearchClient(endpoint="YOUR_ENDPOINT",
-                        credentials=CognitiveServicesCredentials(subscription_key))
+        client = NewsSearchClient(endpoint=EP,
+                        credentials=CognitiveServicesCredentials(KEY))
         result = client.news.search(query=q)
         if hasattr(result, 'value'):
             for i in range(len(result.value)):
@@ -73,8 +74,8 @@ def index():
                 }
                 response.append(page)
     if ct == 'video':
-        client = VideoSearchClient(endpoint="YOUR_ENDPOINT",
-                        credentials=CognitiveServicesCredentials(subscription_key))
+        client = VideoSearchClient(endpoint=EP,
+                        credentials=CognitiveServicesCredentials(KEY))
         result = client.videos.search(query=q)
         if hasattr(result, 'value'):
             for i in range(len(result.value)):
