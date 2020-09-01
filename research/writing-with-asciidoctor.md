@@ -5,7 +5,7 @@
 ## Asciidoctorのインストール
 
 - [Rubyをインストール](../dev/pc-ruby.md)する
--  `Windows Powershell (x86)`を起動し、以下のコマンドを実行
+-  `Windows Powershell`を起動し、以下のコマンドを実行
 ```
 PS C:\Users\アカウント名>gem install asciidoctor asciidoctor-diagram asciidoctor-pdf-cjk-kai_gen_gothic
 PS C:\Users\アカウント名>asciidoctor-pdf-cjk-kai_gen_gothic-install
