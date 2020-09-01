@@ -50,7 +50,6 @@ PS C:\Users\アカウント名>cd C:\
 PS C:\>mkdir Home; cd Home
 PS C:\Home>mkdir sNNNNNNN; cd sNNNNNNN
 PS C:\Home\sNNNNNNN>mkdir Workspace; cd Workspace
-PS C:\Home\sNNNNNNN\Workspace>mkdir Local
 ```
 - 結果
 ```
@@ -58,5 +57,5 @@ C:
   ├ Home
     ├ sNNNNNNN
       ├ Workspace
-        ├ Local
+        ├ ここにフォルダやファイルを保存する
 ```
