@@ -69,7 +69,7 @@ toc::[]
 
 ### PDFへの出力
 
-- `F1`キーでVSCodeのコマンドパレットを表示
+- ``キーでVSCodeのコマンドパレットを表示
 - `AsciiDoc: Export document as PDF`を選択
 - `This feature requires wkhtmltopdf do you want to download`というメッセージが画面右下に表示されたら`Download`を選択
 - 保存先の選択
