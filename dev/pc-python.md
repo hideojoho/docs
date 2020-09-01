@@ -14,7 +14,7 @@
   - [x] Install launcher for all users (recommended)
   - [x] Add Python 3.x to PATH
 - `Customize installation`を選択 → `Next`
-- `Advanced Options`の`Customize install location`の`C:\Users\ユーザ名\AppData\Local\Programs\Python\Python38`を`C:\Python\Python38`に変更 → `Install`
+- `Advanced Options`の`Customize install location`の`C:\Users\ユーザ名\AppData\Local\Programs\Python\Python38`を`C:\Home\sNNNNNN\Python\Python38`に変更 → `Install`
 - `Setup was successful`が表示されたら、`Close`
 - `Windows PowerShell`を起動し、以下のコマンドを実行
 ```
