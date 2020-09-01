@@ -21,7 +21,7 @@
 
 ## 手順1：デフォルトの作業エリア（第１作業エリア）
 
-- `Windows PowerShell (x86)`を起動し、以下のコマンドを実行（エクスプローラーで作業しても良い）
+- `Windows PowerShell`を起動し、以下のコマンドを実行（エクスプローラーで作業しても良い）
 ```
 PS C:\Users\アカウント名>mkdir SynologyDrive; cd SynologyDrive
 PS C:\Users\アカウント名\SynologyDrive>mkdir MyFolders; mkdir TeamFolders; cd TeamFolders
@@ -43,7 +43,7 @@ C:
 
 ## 手順2: 第２作業エリア
 
-- `Windows PowerShell (x86)`を起動し、以下のコマンドを実行（エクスプローラーで作業しても良い）
+- `Windows PowerShell`を起動し、以下のコマンドを実行（エクスプローラーで作業しても良い）
 - `sNNNNNNN`は統一認証のユーザ名（半角英数）
 ```
 PS C:\Users\アカウント名>cd C:\
