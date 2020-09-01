@@ -1,6 +1,5 @@
 # Windows Subsystem for Linux 2 (WSL-2)
 
-- :warning: この手順書は、`Windows 10 May 2020 Update`をインストールします。指導教員から指示があった場合のみ実行しましょう。
 - :bulb: WSLとは、Windows 10に`Ubuntu`などのLinuxのディストリビューションをインストールするための仕組みです。
 
 ## 所要時間
@@ -8,22 +7,6 @@
 - 2時間
 
 ## 手順
-
-### Windows 10 May 2020 Updateのインストール
-
-#### Windows Updateからインストール可能な場合
-
-:bulb: 2020年8月17日現在、当該アップデートは利用可能になっていません。
-
-- Windows Updateの指示に従ってください。
-
-#### Microsoftのサイトからインストールする場合
-
-- [Windows 10 のダウンロード - Microsoft](https://www.microsoft.com/ja-jp/software-download/windows10)にいく
-- 「Windows 10 May 2020 Update」の「今すぐアップデート」を選択
-- インストーラーをダウンロードし、実行
-- インストーラーの指示にしたがってアップデート
-- インストール完了後、再度Windows Updateを実行し、必要に応じて再起動
 
 ### WSL2のインストール
 
