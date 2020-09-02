@@ -113,7 +113,7 @@ tagline      : You Know, for Search
 
 ## Kibanaからの接続方法
 
-- [Kibana](1-install-kibana.md)
+- [Kibanaのインストールと基本利用](1-install-kibana.md)
 
 ## URLs
 
