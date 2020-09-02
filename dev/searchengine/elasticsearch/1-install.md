@@ -81,9 +81,23 @@ PS C:\Home\sNNNNNNN\elasticsearch-7.9.0> .\bin\elasticsearch.bat
 }
 ```
 
-## Stop Elasticsearch
+- （新規作成した）`PowerShell`からは以下のコマンドで整形されたJSON結果が出力されます。
 
-- `Ctrl+C`
+```
+PS C:\Users\ユーザ名> Invoke-RestMethod http://192.168.1.25:9200
+
+name         : DESKTOP-8NHHU5A
+cluster_name : elasticsearch
+cluster_uuid : zc02j8hARNaiFo8a_lVH7g
+version      : @{number=7.9.0; build_flavor=default; build_type=zip; build_hash=a479a2a7fce0389512d6a9361301708b92dff66
+               7; build_date=2020/08/11 21:36:48; build_snapshot=False; lucene_version=8.6.0; minimum_wire_compatibilit
+               y_version=6.8.0; minimum_index_compatibility_version=6.0.0-beta1}
+tagline      : You Know, for Search
+```
+
+## Elasticsearchの停止
+
+- Elasticsearchを起動した`Powershell`に`Ctrl+C`を入力
 
 ```
 ...
@@ -97,7 +111,7 @@ PS C:\Home\sNNNNNNN\elasticsearch-7.9.0> .\bin\elasticsearch.bat
 バッチ ジョブを終了しますか (Y/N)? y
 ```
 
-## Connect from Kibana
+## Kibanaからの接続方法
 
 - [Kibana](1-install-kibana.md)
 
