@@ -7,15 +7,15 @@
 ### Javaのインストール
 
 - [Java環境](../../pc-java.md)
-- [Elasticsearch](1-install.md)
+- [Elasticsearchのインストールと基本利用](1-install.md)
   
 ## バイナリのダウンロード
 
 - [Kibanaホームページ](https://www.elastic.co/jp/downloads/kibana)から`WINDOWS`を選択
   - 以下の説明ではバージョン番号を自分がダウンロードしたものに置き換えること
-- ダウンロードしたZipファイルを解凍
+- ダウンロードしたZipファイルを解凍（ものすごく時間がかかります）
 - 解凍されたフォルダ（例：`kibana-7.9.0-windows-x86_64`）を[第2作業エリア](../../pc-workspace.md)（例 `C:\Home\sNNNNNN`）に移動
-- Change the folder name to `kibana-7.9.0`
+- 移動したフォルダ名を`kibana-7.9.0`に変更
 
 ## 環境変数の設定
 
@@ -28,7 +28,7 @@
 
 ## Kibanaの起動
 
-- :bulb: Start [Elasticsearch](1-install.md) first
+- :bulb: [Elasticsearch](1-install.md) を先に起動しておく
 - `Windows PowerShell`を新規起動し、以下のコマンドを実行
 
 ```
@@ -37,6 +37,11 @@ PS C:\Home\sNNNNNNN\kibana-7.9.0> .\bin\kibana.bat
 ```
 
 - http://localhost:5601/
+
+
+## Kibanaの停止
+
+- Kibanaを起動している`PowerShell`に`Ctrl+C`を入力
 
 ## URLs
 
