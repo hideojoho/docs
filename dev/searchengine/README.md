@@ -66,6 +66,10 @@ Luceneをベースにした検索システム。時系列データの扱いが�
 
 - URL: https://www.elastic.co/jp/elasticsearch/
 
+### 手順書
+
+- [システムのインストールと基本利用](elasticsearch/1-install.md)
+
 ## FESS
 
 Elasticsearchをベースにした検索システム。クローラーや検索UIを搭載しているのが特徴。
