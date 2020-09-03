@@ -24,7 +24,7 @@ $ kubectl get all
 No resources found in sNNNNNNN namespace.
 ```
 
-- 作業用フォルダの作成
+## 作業用フォルダの作成
 
 ```
 $ mkdir playground/projects/sNNNNNNN/my-ray
