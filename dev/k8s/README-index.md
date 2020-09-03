@@ -24,3 +24,4 @@ import sys
 - [MySQLデータベースの利用](k8s-mysql.md)
 - [Elasticsearchの利用](k8s-elasticsearch.md)
 - [Kibanaの利用](k8s-kibana.md)
+- [Rayの利用](k8s-ray.md)
