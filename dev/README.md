@@ -34,7 +34,7 @@
 
 ### 簡易版
 
-* [Windows Subsystem for Linux 1 (WSL-1)のインストール](pc-wsl-1.md)
+* [Windows Subsystem for Linux 2 (WSL-2)のインストール](pc-wsl-2.md)
 
 ### 本格版
 
