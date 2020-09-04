@@ -20,7 +20,6 @@ import sys
 ## 目的別手順
 
 - [Linuxコマンド集](k8s-linux-commands.md)
-  - Pythonパッケージのインストール方法もここにあります
 - [MySQLデータベースの利用](k8s-mysql.md)
 - [Elasticsearchの利用](k8s-elasticsearch.md)
 - [Kibanaの利用](k8s-kibana.md)
