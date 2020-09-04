@@ -1,6 +1,6 @@
 # Windows Subsystem for Linux 1 (WSL-1)
 
-:warning: この手順書は、`Windows 10 May 2020 Update`がWindows Updatesから利用可能になった時点で、古いものになる可能性がありますので、注意してください。
+:warning: この手順書は古いので、[WSL-2](pc-wsl-2.md)を参考にしてください。
 
 :bulb: WSLとは、Windows 10に`Ubuntu`などのLinuxのディストリビューションをインストールするための仕組みです。
 
