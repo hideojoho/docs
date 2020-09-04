@@ -13,42 +13,44 @@ Please copy and paste the following template for your seminar note.
 
 ### Tasks from the previous meeting
 
--	Task 1
--	Task 2
--	Task 3
+- Task 1
+- Task 2
+- Task 3
 
 ### Completed tasks and their outcomes
 
 > Put a link so that we can access the outcomes
 
--	Task 1
--	Task 2
--	Task 3
+- Task 1
+- Task 2
+- Task 3
 
 ### Questions and issues to be discussed at the meeting
 
--	Questions
--	Issues
+- Questions
+  - Item
+- Issues
+  - Item
 
 ### Tasks to be done by the next meeting
 
 > What is your next step? You need to think hard about this before coming to the meeting. Then, update the task list based on the discussion during the meeting.
 
--	Task 1
--	Task 2
--	Task 3
+- Task 1
+- Task 2
+- Task 3
 
 ### Other notes
 
 > Anything
 
-* What's your faviourite news this week?
-* What's your little (or big) things that made you happy or appreciating this week?
-* Any message to supervisor?
+- What's your faviourite news this week?
+- What's your little (or big) things that made you happy or appreciating this week?
+- Any message to supervisor?
 
 ### Notes from the seminar
 
 > Write down the detail record of meeting after the seminar is done.
 
-
+- Note
 ```
