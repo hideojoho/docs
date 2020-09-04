@@ -1,6 +1,6 @@
 # Windows Subsystem for Linux 2 (WSL-2)
 
-- :bulb: WSLとは、Windows 10に`Ubuntu`などのLinuxのディストリビューションをインストールするための仕組みです。
+:bulb: WSLとは、Windows 10に`Ubuntu`などのLinuxのディストリビューションをインストールするための仕組みです。
 
 ## 所要時間
 
