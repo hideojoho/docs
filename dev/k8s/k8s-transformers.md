@@ -63,3 +63,7 @@ classifier('We are very happy to show you the Transformers library.')
 ```
 [{'label': 'POSITIVE', 'score': 0.9997795224189758}]
 ```
+
+## URLs
+
+- https://huggingface.co/transformers/quicktour.html
