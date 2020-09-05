@@ -183,3 +183,4 @@ print(summarizer(ARTICLE, max_length=130, min_length=30, do_sample=False))
 ## URLs
 
 - https://huggingface.co/transformers/quicktour.html
+- https://huggingface.co/transformers/task_summary.html
