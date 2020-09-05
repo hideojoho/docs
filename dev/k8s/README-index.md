@@ -25,3 +25,4 @@ import sys
 - [Kibanaの利用](k8s-kibana.md)
 - [Rayの利用](k8s-ray.md)
 - [分散表現の取得](k8s-embedding.md)
+- [汎用言語表現モデルの利用](k8s-transformers.md)
