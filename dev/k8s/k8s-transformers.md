@@ -11,3 +11,33 @@
 ## 手順
 
 以下は全てJupyter Notebook上で実行する
+
+- 環境変数の設定
+
+```
+import os
+os.environ['TRANSFORMERS_CACHE'] = '/home/jovyan/playground/projects/transformers/'
+```
+
+- パッケージのインストール
+
+```
+import sys
+!{sys.executable} -m pip install pytorch transformers
+```
+
+- パッケージのインポート
+
+```
+from transformers import pipeline
+```
+
+- 意見分析
+
+```
+classifier = pipeline('sentiment-analysis')
+classifier('We are very happy to show you the Transformers library.')
+```
+```
+[{'label': 'POSITIVE', 'score': 0.9997795224189758}]
+```
