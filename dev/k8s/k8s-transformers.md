@@ -12,6 +12,8 @@
 
 ### 拡張機能を有効にする
 
+:bulb: 以下はノートブックを開く前に行う。開いている場合は、一度シャットダウンしておく。
+
 - Jupyter Labの左端パネルの一番下のパズルアイコンを選択
 - `Enable`を選択
 - `Discover`リストから`@jupyter-widgets/jupyterlab-manager`の「Install」を選択
