@@ -1,6 +1,6 @@
 # 汎用言語表現モデルの利用
 
-`BERT`などの汎用言語表現モデルを使って、意見分析、要約、テキスト生成、エンティティ抽出、質問応答などの自然言語処理タスクを行う。
+`BERT`などの汎用言語表現モデルを使って、感情分析、要約、テキスト生成、エンティティ抽出、質問応答などの自然言語処理タスクを行う。
 
 ## 前提
 
@@ -57,15 +57,15 @@ Successfully installed click-7.1.2 filelock-3.0.12 future-0.18.2 joblib-0.16.0 n
 from transformers import pipeline
 ```
 
-### 意見分析
+### 感情分析
 
-- 意見分析パイプラインの起動
+- 感情分析パイプラインの起動
 
 ```
 classifier = pipeline('sentiment-analysis')
 ```
 
-- 意見分析の実行
+- 感情分析の実行
 
 ```
 classifier('We are very happy to show you the Transformers library.')
@@ -178,6 +178,52 @@ print(summarizer(ARTICLE, max_length=130, min_length=30, do_sample=False))
 ```
 ```
 [{'summary_text': ' Liana Barrientos, 39, is charged with two counts of "offering a false instrument for filing in the first degree" In total, she has been married 10 times, with nine of her marriages occurring between 1999 and 2002 . At one time, she was married to eight men at once, prosecutors say .'}]
+```
+
+## 日本語モデルの利用
+
+- パッケージのインストール
+
+```
+import sys
+!{sys.executable} -m pip install fugashi ipadic
+```
+
+- パッケージのインポート
+
+```
+import fugashi
+import ipadic
+```
+
+### 感情分析
+
+- パッケージのインポート
+
+```
+from transformers import AutoTokenizer, AutoModelForSequenceClassification
+```
+
+- 日本語モデルのロード
+
+```
+tokenizer = AutoTokenizer.from_pretrained("cl-tohoku/bert-base-japanese-whole-word-masking")
+model = AutoModelForSequenceClassification.from_pretrained("cl-tohoku/bert-base-japanese-whole-word-masking")
+```
+
+- 感情分析パイプラインの起動
+
+```
+classifier = pipeline(model=model, tokenizer=tokenizer, task='sentiment-analysis')
+```
+
+- 感情分析の実行
+
+```
+classifier('トランスフォーマーライブラリを紹介できて、とても幸せです。')
+```
+```
+[{'label': 'LABEL_1', 'score': 0.6203145980834961}]
 ```
 
 ## URLs
