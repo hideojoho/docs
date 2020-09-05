@@ -52,7 +52,6 @@ model = gensim.models.KeyedVectors.load_word2vec_format(model_path, binary=True)
 ```
 
 - 分散表現の獲得
-  - 出力される分散表現の次元は学習済みモデルに依存します
   
 ```
 model["東京"]
