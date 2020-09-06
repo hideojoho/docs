@@ -8,6 +8,7 @@
 ## 手順
 
 - ノートブックの場合
+  - 下記チュートリアルの[実行例](ipynb/jupyter-dotnet.ipynb)
 
 ```
 !dotnet new sln -o FSNetCore
