@@ -10,23 +10,6 @@
 
 ## 手順
 
-### 拡張機能を有効にする
-
-:bulb: 以下はノートブックを開く前に行う。開いている場合は、一度シャットダウンしておく。
-
-- Jupyter Labの左端パネルの一番下のパズルアイコンを選択
-- `Enable`を選択
-- `Discover`リストから`@jupyter-widgets/jupyterlab-manager`の「Install」を選択
-- 左パネルの上部に表示される「Rebuild」を選択し、ビルドが終わるまで待つ
-- `Build Complete`の表示がでたら、`Reload`を選択
-- 新規ノートブックを開き、以下のコマンドを実行
-
-```
-import sys
-!{sys.executable} -m pip install ipywidgets
-```
-- ノートブックをシャットダウンして、新規ノートブックを作成
-
 ### Transformer
 
 以下は全てJupyter Notebook上で実行する
@@ -42,7 +25,7 @@ os.environ['TRANSFORMERS_CACHE'] = '/home/jovyan/playground/projects/transformer
 
 ```
 import sys
-!{sys.executable} -m pip install torch transformers
+!{sys.executable} -m pip install ipywidgets torch transformers
 ```
 ```
 Collecting torch
@@ -54,6 +37,8 @@ Successfully installed click-7.1.2 filelock-3.0.12 future-0.18.2 joblib-0.16.0 n
 - パッケージのインポート
 
 ```
+from __future__ import print_function
+import ipywidgets as widgets
 from transformers import pipeline
 ```
 
@@ -97,6 +82,9 @@ a model on a SQuAD task, you may leverage the examples/question-answering/run_sq
 ```
 result = qa(question="What is extractive question answering?", context=context)
 print(f"Answer: '{result['answer']}', score: {round(result['score'], 4)}, start: {result['start']}, end: {result['end']}")
+```
+```
+Answer: 'the task of extracting an answer from a text given a question.', score: 0.6226, start: 34, end: 96
 ```
 
 ### テキスト生成
@@ -230,3 +218,5 @@ classifier('トランスフォーマーライブラリを紹介できて、と�
 
 - https://huggingface.co/transformers/quicktour.html
 - https://huggingface.co/transformers/task_summary.html
+- https://github.com/huggingface/transformers/tree/master/notebooks
+
