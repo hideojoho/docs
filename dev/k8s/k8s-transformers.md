@@ -31,7 +31,7 @@ import sys
 
 以下は全てJupyter Notebook上で実行する
 
-- 環境変数の設定
+- 環境変数の設定（:bulb: 重要）
 
 ```
 import os
