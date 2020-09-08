@@ -42,6 +42,9 @@ Microsoftが提供する商用ウェブ検索サービス。多様なAPIを提�
     - [Python](bing/2-client-python.md)
   - チャットボット
     - [Bot Framework](bing/2-client-bot.md)
+- 研究室クラスターへのデプロイ
+  - [デプロイ](bing/3-k8s.md)
+  - [Jupyter Notebookからのアクセス](../k8s/ipynb/bingsearch.ipynb)
 
 ## Lucene
 
