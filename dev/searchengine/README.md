@@ -65,6 +65,11 @@ Luceneをベースにした検索システム。「文書」検索が得意。�
 
 - URL: https://lucene.apache.org/
 
+### 手順書
+
+- 研究室クラスターでの開発
+  - [ソースファイルのコンパイル](lucene/3-compile-k8s.md)
+  
 ## Elasticsearch
 
 Luceneをベースにした検索システム。時系列データの扱いが得意。多機能データ解析UIの[Kibana](https://www.elastic.co/jp/kibana/)と連携できる。
