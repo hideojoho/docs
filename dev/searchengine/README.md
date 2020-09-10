@@ -68,7 +68,7 @@ Luceneをベースにした検索システム。「文書」検索が得意。�
 ### 手順書
 
 - 研究室クラスターでの開発
-  - [ソースファイルのコンパイル](lucene/3-compile-k8s.md)
+  - [ソースファイルのコンパイル](solr/3-compile-k8s.md)
   
 ## Elasticsearch
 
