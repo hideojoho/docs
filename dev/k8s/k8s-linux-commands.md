@@ -1,5 +1,7 @@
 # Jupyter Notebook Linxuコマンド集
 
+:bulb: 以下の説明はJupyter Notebook内のセルからLinuxコマンドを実行する方法です。Jupyter Labのターミナルを使うコマンド類の説明は[こちら](k8s-linux-commands-terminal.md)です。
+
 ## 前提
 
 - [研究室クラスターの使い方](README.md)
