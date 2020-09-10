@@ -19,7 +19,8 @@ import sys
 
 ## 目的別手順
 
-- [Linuxコマンド集](k8s-linux-commands.md)
+- [Jupyter Notebook Linuxコマンド集](k8s-linux-commands.md)
+- [Jupyter Lab Terminal Linuxコマンド集](k8s-linux-commands-terminal.md)
 - [MySQLデータベースの利用](k8s-mysql.md)
 - [Elasticsearchの利用](k8s-elasticsearch.md)
 - [Kibanaの利用](k8s-kibana.md)
