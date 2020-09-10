@@ -112,7 +112,7 @@ $ curl -s "http://localhost:8983/solr/techproducts/admin/ping"
   - クエリ：`hello`
 
 ```
-$ curl "http://localhost:8983/solr/techproducts/select?q=hello&wt=json"
+$ curl -s "http://localhost:8983/solr/techproducts/select?q=hello&wt=json"
 {
   "responseHeader":{
     "status":0,
