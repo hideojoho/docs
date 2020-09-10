@@ -45,3 +45,6 @@ $ tmux attach -t 0 # or 1 or ...
 ```
 exit
 ```
+
+- URLs
+  - https://github.com/tmux/tmux/wiki
