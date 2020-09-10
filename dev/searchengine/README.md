@@ -56,6 +56,8 @@ Solr / Elasticsearch / FESS / Anserini に基本機能を提供している根�
 
 - [システムのインストールと基本利用](lucene/1-install.md)
 - [ソースファイルのコンパイル](lucene/3-compile.md)
+- 研究室クラスターでの開発
+  - [ソースファイルのコンパイル](lucene/3-compile-k8s.md)
 
 ## Solr
 
