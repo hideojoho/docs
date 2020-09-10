@@ -107,3 +107,39 @@ $ curl -s "http://localhost:8983/solr/techproducts/admin/ping"
       "rid":"localhost-1"}},
   "status":"OK"}
 ```
+
+- 検索
+  - クエリ：`hello`
+
+```
+$ curl "http://localhost:8983/solr/techproducts/select?q=hello&wt=json"
+{
+  "responseHeader":{
+    "status":0,
+    "QTime":3,
+    "params":{
+      "q":"hello",
+      "wt":"json"}},
+  "response":{"numFound":1,"start":0,"numFoundExact":true,"docs":[
+      {
+        "id":"SOLR1000",
+        "name":"Solr, the Enterprise Search Server",
+        "manu":"Apache Software Foundation",
+        "cat":["software",
+          "search"],
+        "features":["Advanced Full-Text Search Capabilities using Lucene",
+          "Optimized for High Volume Web Traffic",
+          "Standards Based Open Interfaces - XML and HTTP",
+          "Comprehensive HTML Administration Interfaces",
+          "Scalability - Efficient Replication to other Solr Search Servers",
+          "Flexible and Adaptable with XML configuration and Schema",
+          "Good unicode support: héllo (hello with an accent over the e)"],
+        "price":0.0,
+        "price_c":"0.0,USD",
+        "popularity":10,
+        "inStock":true,
+        "incubationdate_dt":"2006-01-17T00:00:00Z",
+        "_version_":1677432899836575744,
+        "price_c____l_ns":0}]
+  }}
+```
