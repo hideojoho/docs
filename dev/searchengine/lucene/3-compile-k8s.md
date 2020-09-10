@@ -13,7 +13,7 @@
 
 ### tmuxの起動
 
-- コンパイルは時間がかかるの[tmux](../../k8s/k8s-linux-commands-terminal.md)を使います
+- コンパイルは時間がかかるので、[tmux](../../k8s/k8s-linux-commands-terminal.md)を使います
 
 ```
 $ tmux
@@ -21,6 +21,7 @@ $ tmux
 
 ### プロジェクトフォルダに移動
 
+- 以下の手順はtmux内で実行します
 - プロジェクトフォルダ：`playground/projects/sNNNNNNN/`
 
 ```
