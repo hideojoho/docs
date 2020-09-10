@@ -53,7 +53,7 @@ Sending stop command to Solr running on port 8983 ... waiting up to 180 seconds 
 
 ```
 $ ./bin/solr start -e techproducts "-Dsolr.ltr.enabled=true"
-Creating Solr home directory /home/jovyan/playground/projects/hideojoho/github/lucene-solr/solr/packaging/build/solr-9.0.0-SNAPSHOT/example/techproducts/solr
+Creating Solr home directory /home/jovyan/playground/projects/sNNNNNNN/github/lucene-solr/solr/packaging/build/solr-9.0.0-SNAPSHOT/example/techproducts/solr
 
 Starting up Solr on port 8983 using command:
 "bin/solr" start -p 8983 -s "example/techproducts/solr" -Dsolr.ltr.enabled=true
@@ -64,7 +64,7 @@ Started Solr server on port 8983 (pid=404). Happy searching!
 
 
 Created new core 'techproducts'
-Indexing tech product example docs from /home/jovyan/playground/projects/hideojoho/github/lucene-solr/solr/packaging/build/solr-9.0.0-SNAPSHOT/example/exampledocs
+Indexing tech product example docs from /home/jovyan/playground/projects/sNNNNNNN/github/lucene-solr/solr/packaging/build/solr-9.0.0-SNAPSHOT/example/exampledocs
 SimplePostTool version 5.0.0
 Posting files to [base] url http://localhost:8983/solr/techproducts/update using content-type application/xml...
 POSTing file gb18030-example.xml to [base]
