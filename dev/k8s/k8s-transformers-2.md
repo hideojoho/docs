@@ -2,6 +2,8 @@
 
 学習済みの汎用言語表現モデルをベースにして、自分のデータを使ってモデルを再学習（微調整・ファインチューニング）する。
 
+:warning: 作成中
+
 ## 前提
 
 - [汎用言語表現モデルの利用](k8s-transformers.md)
@@ -42,6 +44,7 @@ import ipywidgets as widgets
 from transformers import pipeline
 ```
 
+- 作成中
 
 ## URLs
 
