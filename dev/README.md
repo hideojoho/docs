@@ -32,11 +32,12 @@
 
 :bulb: `Python`（含 `Jupyter Notebook` / `JupyterLab`）, `Ruby`, `R`, `LaTeX`などはWindows版の安定したアプリがありますので、特に支障がない限りそれらを使うことをおすすめします。
 
-### 簡易版
+### 必要台数：1台の場合
 
 * [Windows Subsystem for Linux 2 (WSL-2)のインストール](pc-wsl-2.md)
+* [仮想マシンにアプリをインストールする方法](vm-install-apps.md)
 
-### 本格版
+### 必要台数：2台以上の場合
 
 * [VirtualBoxとVagrantのインストール](pc-virtualbox-vagrant.md)
 * [Ubuntu 18.04 LTSを使った仮想マシンの作成](vm-ubuntu1804.md)
