@@ -29,6 +29,10 @@
 - [KJ法による思考の整理](affinity-diagram.md)
 - [Trelloを使ったKJ法](affinity-diagram-with-trello.md)
 
+## ユーザ研究
+
+- [倫理審査申請](user-study/ethics-application.md)
+
 ## 研究発表
 
 :bulb: [研究発表のチェックリスト](../check/presentation.md)
