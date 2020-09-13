@@ -4,6 +4,10 @@
 
 - [Review Note template](../templates/review-note.md)
 
+## User Study
+
+- [Ethics Application](user-study/ethics-application.md
+
 ## Writing
 
 :bulb: It is very important that your writing process gets started with an outline.
