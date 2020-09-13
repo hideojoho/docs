@@ -24,11 +24,6 @@
 - [WBS（Work Breakdown Structure）](task-management/wbs.md)
 - タスク管理ツール
 
-## 思考の整理と発想
-
-- [KJ法による思考の整理](affinity-diagram.md)
-- [Trelloを使ったKJ法](affinity-diagram-with-trello.md)
-
 ## ユーザ研究
 
 - [倫理審査申請](user-study/ethics-application.md)
@@ -46,3 +41,10 @@
 ## 論文執筆
 
 - [Asciidoctorを使った論文執筆](writing-with-asciidoctor.md)（卒論・修論）
+
+
+## 思考の整理と発想
+
+- [KJ法による思考の整理](affinity-diagram.md)
+- [Trelloを使ったKJ法](affinity-diagram-with-trello.md)
+
