@@ -1,0 +1,22 @@
+gantt
+    title 倫理審査申請書作成～本実験開始の流れ（個人的経験に基づく）
+    dateFormat  YYYY-MM-DD
+    axisFormat  %m-%d
+    todayMarker off
+    section 申請書作成
+    初版              :a1, 2020-08-30, 7d
+    教員添削          :a2, after a1, 7d
+    提出版            :a3, after a1, 7d
+    修正版            :a4, after c1, 7d
+    実施伺い          :a5, after a4, 7d
+    変更版            :a6, after c3, 7d
+    section 審査委員会・研究協力
+    本審査            :c1, after a2, 14d
+    修正版審査            :c2, after a4, 7d
+    実施伺い審査        :c3, after a5, 7d
+    変更版審査            :c4, after a6, 7d
+    section 実験
+    予備実験          :e1, after c3, 7d
+    設計変更          :e2, after c3, 7d
+    本実験            :e3, after c4, 10d
+            
