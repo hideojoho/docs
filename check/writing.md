@@ -1,0 +1,22 @@
+# Writing Check List
+
+- [ ] [Create an outline](https://trello.com/b/CU3T0Qz3) in Trello
+- [ ] Trello's outline was reviewed by members of the lab.
+- [ ] I had my supervisor review Trello's outline.
+- [ ] Page numbers are displayed.
+- [ ] The font is consistent.
+- [ ] No mixed use of half-width and full-width characters.
+- [ ] Consistent notation on the same concepts
+- [ ] Chart numbers and titles are shown in the figures.
+- [ ] All figures are mentioned in the text.
+- [ ] References in the text to materials listed in the appendix.
+- [ ] References are listed in a uniform format (SIST02 for academic students).
+- [ ] Separating facts from my opinion.
+- [ ] When referring to other people's ideas, the source is mentioned.
+- [ ] "There is a study called ________" followed by a similar phrase, citing related studies.
+- [ ] Is the relationship between sentences (i.e., flow) inevitable?
+- [ ] does not use a double negative (e.g., does not say that it is not used)
+- [ ] following the principle of general to specific (talking in general and then transitioning to individual stories)
+- [ ] well defined and explained key words
+- [ ] illustrating the research and experimental processes.
+- [ ] Concrete examples are presented using photographs, illustrations, and diagrams.
