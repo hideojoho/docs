@@ -10,7 +10,7 @@
 - [ ] Chart numbers and titles are shown in the figures.
 - [ ] All figures are mentioned in the text.
 - [ ] References in the text to materials listed in the appendix.
-- [ ] References are listed in a uniform format (SIST02 for academic students).
+- [ ] References are listed in a uniform format (SIST02 for undergraduate students).
 - [ ] Separating facts from my opinion.
 - [ ] When referring to other people's ideas, the source is mentioned.
 - [ ] "There is a study called ________" followed by a similar phrase, citing related studies.
