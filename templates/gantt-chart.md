@@ -8,6 +8,7 @@
 gantt
 	title 研究スケジュール（2020.08.25版）
 	dateFormat  YYYY-MM-DD
+	axisFormat  %m-%d
 	section 研究設計
 	タスク1           :2019-12-01, 31d
 	タスク2           :2020-01-01, 60d
