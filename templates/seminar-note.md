@@ -10,6 +10,7 @@ Please copy and paste the following template for your seminar note.
 ### Gantt Chart
 
 > Add the latest version of Gantt Chart here
+> The coverage should be the previous one month and next two months from the current date
 
 ### Tasks from the previous meeting
 
