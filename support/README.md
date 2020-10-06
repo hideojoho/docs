@@ -2,6 +2,7 @@
 
 :bulb: 研究室運営をサポートしてくださる事務補佐員を始めとした皆様に向けたガイドです
 
+* [組織図](organisation-map.md)
 * [連絡手段](communication-methods.md)
 * [情報共有](information-sharing.md)
 * ルーチン
