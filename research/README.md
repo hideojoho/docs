@@ -6,7 +6,7 @@
 
 ## User Study
 
-- [Ethics Application](user-study/ethics-application.md
+- [Ethics Application](user-study/ethics-application.md)
 
 ## Writing
 
