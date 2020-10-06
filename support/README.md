@@ -6,7 +6,7 @@
 * [組織図](organisation-map.md)
 * [連絡手段](communication-methods.md)
 * [情報共有](information-sharing.md)
-* ルーチン
-  * [日課（毎回）](daily-routine.md)
+* 主な業務内容
+  * [日課](daily-routine.md)
   * [週課](weekly-routine.md)
   * [月課](monthly-routine.md)
