@@ -7,7 +7,7 @@
 ## 前提
 
 - Jupyter Notebookイメージ
-  - モデルの利用：`jupyter/minimal-notebook`
+  - `jupyter/minimal-notebook`
 
 ## 手順
 
