@@ -16,9 +16,11 @@
 
 以下は全てJupyter Notebook上で実行する
 
-- キャッシュ保存先変数の設定（:bulb: 重要）
+- `transformers`および`datasets`キャッシュ保存先変数の設定（:bulb: 重要）
 
 ```
+import os
+os.environ['TRANSFORMERS_CACHE'] = '/home/jovyan/playground/projects/transformers'
 DATASETS_CACHE_DIR = '/home/jovyan/playground/projects/huggingface/datasets'
 ```
 
