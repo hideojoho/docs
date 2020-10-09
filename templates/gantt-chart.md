@@ -8,6 +8,7 @@ Please use the following as a template.
 gantt
 	title Research Schedule（2020.08.25）
 	dateFormat  YYYY-MM-DD
+	axisFormat %m-%d
 	section Research Design
 	Task 1           :2019-12-01, 31d
 	Task 2           :2020-01-01, 60d
