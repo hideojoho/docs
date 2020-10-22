@@ -15,7 +15,7 @@
 
 - Windows PowerShellから以下のコマンドを実行
 ```
-C:\Users\アカウント名> jupyter lab
+C:\Users\アカウント名> py -m jupyter lab
 ```
 - ブラウザが自動的に起動し、Jupyter Labの画面が表示される
   
