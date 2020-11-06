@@ -41,7 +41,7 @@
 ## 論文執筆
 
 - [Asciidoctorを使った論文執筆](writing-with-asciidoctor.md)（卒論・修論）
-
+- [加藤先生作成のLaTeXテンプレート](https://ja.overleaf.com/project/5dfeb9c77f14160001a685c1)
 
 ## 思考の整理と発想
 
