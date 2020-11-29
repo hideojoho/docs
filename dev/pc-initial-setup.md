@@ -14,6 +14,7 @@
 
 ## 手順 1
 
+* [研究室PC利用に関するお願い](how-to-use-lab-pc.md)
 * [Offie365のアカウントを取得しておく](../onboarding/getting-started.md)
 * [学内無線LAN](https://www.cc.tsukuba.ac.jp/wp/service/wireless/)に接続できる場所にいく
 * PCを電源ケーブルにつなぐ
