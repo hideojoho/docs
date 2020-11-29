@@ -2,6 +2,8 @@
 
 ## PCの設定
 
+* :bulb: [研究室PC利用に関するお願い](how-to-use-lab-pc.md)
+
 ### 環境：ThinkPad Eシリーズ・Windows 10 Enterprise・US配列
 
 * [PCの初期設定](pc-initial-setup.md)
