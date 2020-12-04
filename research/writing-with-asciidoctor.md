@@ -169,3 +169,4 @@ end
 ## AsciiDoctorのレファレンス
 
 - https://github.com/asciidoctor/asciidoctor/blob/master/README-jp.adoc
+- https://takumon.github.io/asciidoc-syntax-quick-reference-japanese-translation/
