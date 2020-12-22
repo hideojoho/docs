@@ -59,7 +59,7 @@
 
 ### AsciiDoctor
 
-- AsciiDoc (by Joao Pinto)
+- AsciiDoc (by asciidoctor)
 
 ### LaTeX
 
