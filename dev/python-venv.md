@@ -8,42 +8,42 @@ Pythonアプリの開発で、仮想環境を構築する手順。[Solrサーバ
 - [VSCode](pc-vscode.md)
 - [Solrサーバ](solr-server.md) (`bin\solr.cmd start -e techproducts`)
 
-## 仮想環境の構築
-
-- [第2作業エリア](pc-workspace.md)にPython仮想環境用フォルダ（`venv`）を作成
-```
-PS C:\Users\アカウント名> mkdir C:\Home\sNNNNNNN\Workspace\venv
-PS C:\Users\アカウント名> cd C:\Home\sNNNNNNN\Workspace\venv
-```
-- `Solr`クライアント用仮想環境の構築
-```
-PS C:\Home\sNNNNNNN\Workspace\venv> py -m venv solr-client
-```
-
 ## VSCodeの準備
 
-- 構築した仮想環境フォルダをVSCodeで開く
-  - `C:\Home\sNNNNNNN\Workspace\venv\solr-client`
-- `requirements.txt`を新規作成し、以下の内容を書き、保存
+- `Solr`クライアント用フォルダ`solr-client`を[第2作業エリア](pc-workspace.md)に作成
+  - `C:\Home\sNNNNNNN\Workspace\solr-client`
+- `solr-client`フォルダをVSCodeで開く
+- `Solr`クライアント用仮想環境の構築
 ```
-pysolr==3.9.0
-urllib3==1.25.10
+PS C:\Home\sNNNNNNN\Workspace\solr-client> py -m venv venv
 ```
-- `` Ctrl+Shift+` ``でVSCode内にターミナルを起動
-  - 仮想環境が自動的に認識されて、ターミナルのプロンプト行の先頭に`(solr-client)`が表示されることを確認
-  - 仮想環境が認識されない場合は、`Ctrl+Shift+P`でコマンドパレットを開き、`python select interpreter`と入力し、その後の手順にしたがって、`C:\Home\sNNNNNNN\Workspace\venv\solr-client\Scripts\python.exe`を選択
-    - 選択する`python.exe`は仮想環境ごとに変える必要があるので注意すること
+- 仮想環境の起動
+  - :bulb: 仮想環境を起動するとプロンプトの先頭に`(venv)`が表示されます
+```
+PS C:\Home\sNNNNNNN\Workspace\solr-client> .\venv\Scripts\activate
+(venv) PS C:\Home\sNNNNNNN\Workspace\solr-client>
+```
+- 仮想環境の終了
+```
+(venv) PS C:\Home\sNNNNNNN\Workspace\solr-client> deactivate
+PS C:\Home\sNNNNNNN\Workspace\solr-client>
+```
 
 ## Pythonモジュールのインストール
 
 :bulb: 仮想環境を利用する利点の1つは、環境ごとに必要なモジュールをインストールするので、
 パソコンのOSや他の開発環境に影響を与える危険が少ないことです。一方で、必要なモジュールは
-新規環境ごとに構築する必要があります。環境に必要なモジュールは`requirements.txt`に書いておきます。
+新規環境ごとに構築する必要があります。環境に必要なモジュールは`requirements.txt`に書きます。
 
+- `solr-client`フォルダ内に`requirements.txt`を新規作成し、以下の内容を書き、保存
+```
+pysolr==3.9.0
+urllib3==1.25.10
+```
 - VSCodeターミナルから以下を実行
 ```
-(solr-client) PS C:\Home\sNNNNNNN\Workspace\venv\solr-client> py -m pip install -U pip
-(solr-client) PS C:\Home\sNNNNNNN\Workspace\venv\solr-client> py -m pip install -r requirements.txt
+(venv) PS C:\Home\sNNNNNNN\Workspace\solr-client> py -m pip install -U pip
+(venv) PS C:\Home\sNNNNNNN\Workspace\solr-client> py -m pip install -r requirements.txt
 ```
 
 ## Solrクライアントの作成と実行
@@ -81,7 +81,7 @@ for result in results:
 
 - クライアントの実行
 ```
-(solr-client) PS C:\Home\sNNNNNNN\Workspace\venv\solr-client> python .\solr-client.py
+(venv) PS C:\Home\sNNNNNNN\Workspace\solr-client> python .\solr-client.py
 Saw 3 result(s).
 The name is 'iPod & iPod Mini USB 2.0 Cable'.
 The name is 'Belkin Mobile Power Cord for iPod w/ Dock'. 
