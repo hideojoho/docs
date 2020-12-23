@@ -1,5 +1,15 @@
 # 卒論・修論用AsciiDoctorテンプレート
 
+## VSCodeの設定
+
+- AsciiDoctorの拡張機能をインストール
+- VSCodeの設定
+  - AsciiDocの設定画面で `Asciidoc: Asciidoctorpdf_command`に以下を設定
+    ```
+    asciidoctor-pdf -r asciidoctor-pdf-cjk-kai_gen_gothic -a pdf-stylesdir=themes -a pdf-style=custom-theme.yml
+    ```
+  - `Asciidoc: Use_asciidoctorpdf` の `use asciidoctor-pdf...` にチェック
+
 ## ファイル一覧
 
 ### 設定ファイル
