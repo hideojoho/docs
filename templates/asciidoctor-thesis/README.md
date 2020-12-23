@@ -12,7 +12,7 @@
 
 ## ファイル一覧
 
-- PDF出力サンプル：[index.pdf](index.pdf)
+- PDF出力サンプル：[index.pdf](index.pdf) :warning: 副題あり版、英日併記版
 
 ### 設定ファイル
 - 全体の設定：[index.adoc](index.adoc)
