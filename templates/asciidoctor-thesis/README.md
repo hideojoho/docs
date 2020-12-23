@@ -12,6 +12,8 @@
 
 ## ファイル一覧
 
+- PDF出力サンプル：[index.pdf](index.pdf)
+
 ### 設定ファイル
 - 全体の設定：[index.adoc](index.adoc)
 - スタイル設定：[custom-theme.yml](themes/custom-theme.yml)
