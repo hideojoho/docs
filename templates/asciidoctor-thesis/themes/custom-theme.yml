@@ -17,7 +17,7 @@ page:
   layout: portrait
   # NOTE multiply inches by 72 to get pt values
   #margin: [0.5 * 72, 0.67 * 72, 0.67 * 72, 0.67 * 72]
-  margin: [30mm, 20mm, 30mm, 20mm]
+  margin: [30mm, 25mm, 30mm, 25mm]
   # size can be a named size (e.g., A4) or custom dimensions (e.g., [8.25in, 11.69in])
   size: A4
 base:
@@ -36,12 +36,12 @@ base:
   #line_height_length: 18
   #font_size: 11.2
   #line_height_length: 16
-  font_size: 10.5
+  # font_size: 10.5
   #line_height_length: 15
   # correct line height for Noto Serif metrics
-  line_height_length: 15
-  #font_size: 11.25
-  #line_height_length: 18
+  #line_height_length: 15
+  font_size: 11
+  line_height_length: 18
   line_height: $base_line_height_length / $base_font_size
   font_size_large: round($base_font_size * 1.25)
   font_size_small: round($base_font_size * 0.85)
@@ -80,19 +80,37 @@ heading:
   line_height: 1.2
   margin_top: $vertical_rhythm * 0.2
   margin_bottom: $vertical_rhythm * 0.8
+# title_page:
+#   align: right
+#   title_top: 55%
+#   title_font_size: $heading_h1_font_size
+#   title_font_color: 999999
+#   title_line_height: 0.9
+#   subtitle_font_size: $heading_h3_font_size
+#   subtitle_font_style: bold_italic
+#   subtitle_line_height: 1
+#   authors_margin_top: $base_font_size * 1.25
+#   authors_font_size: $base_font_size_large
+#   authors_font_color: 181818
+#   revision_margin_top: $base_font_size * 1.25
 title_page:
-  align: right
-  title_top: 55%
-  title_font_size: $heading_h1_font_size
-  title_font_color: 999999
-  title_line_height: 0.9
-  subtitle_font_size: $heading_h3_font_size
-  subtitle_font_style: bold_italic
-  subtitle_line_height: 1
-  authors_margin_top: $base_font_size * 1.25
-  authors_font_size: $base_font_size_large
-  authors_font_color: 181818
-  revision_margin_top: $base_font_size * 1.25
+  align: center
+  title:
+    top: 10%
+    font_size: $heading_h1_font_size
+    line_height: 
+    margin-bottom: 3cm
+  subtitle:
+    font_size: $heading_h2_font_size
+    line_height: 1
+    margin-top: $base_font_size * 1.25
+  authors:
+    content:
+      name_only: "{graduation} \n\n\n {student-id} \n {author} \n\n\n  {affiliation1} \n {affiliation2}"
+    font_size: $heading_h3_font_size
+  logo:
+    top: 85%
+    image: image:UTLogo_150.png[pdfwidth=12%]
 #prose:
 #  margin_top: 0
 #  margin_bottom: $vertical_rhythm
@@ -198,7 +216,7 @@ toc:
   indent: $horizontal_rhythm
   dot_leader_color: dddddd
   #dot_leader_content: ". "
-  line_height: 1.4
+  line_height: 1.8
 # NOTE In addition to footer, header is also supported
 footer:
   font_size: $base_font_size_small
