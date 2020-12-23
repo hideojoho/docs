@@ -1,12 +1,19 @@
-= Thesis Title 論文題目
+= 論文題目
 // Settings to change 変更する設定
-:author: Name 著者名
-:revnumber: 1.0
-:revdate: 2020-01-01
-:revremark: A brief note about this revision. 版の簡単な説明
+:author: 著者名
+// Student ID 学籍番号
+:student-id: 20201000
+// Affiliation 所属組織
+// College of Library and Knowledge Sciences, School of Informatics
+:affiliation1: 筑波大学情報学群
+// University of Tsukuba
+:affiliation2: 知識情報・図書館学類
+// Graduation Year-Month 卒業年月
+:graduation: 2021年3月
 // Comment out for English 英語論文の場合はコメントアウト
 :lang: ja
 :toc-title: 目次
+:version-label:
 :chapter-label:
 :figure-caption: 図
 :table-caption: 表
@@ -22,11 +29,11 @@
 :source-highlighter: rouge
 :stem: latexmath
 
-// // Abstract 抄録
-include::abstract.adoc[]
+// Abstract 抄録
+// include::abstract.adoc[]
 
 // Table of Contents 目次
-toc::[]
+toc::[opts=nofooter]
 
 // Start section number
 :sectnums:
